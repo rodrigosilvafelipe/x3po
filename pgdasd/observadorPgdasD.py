@@ -8,7 +8,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import platform
 
-from pgdasd.leitorPgdasD import leitorPgdasD
+from leitorPgdasD import leitorPgdasD
 from functions.validadorReceitaBruta import validadorReceitaBruta
 from functions.enviarEmail import enviarEmail
 
