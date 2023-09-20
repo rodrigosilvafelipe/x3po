@@ -6,6 +6,7 @@ import openpyxl
 import math
 import time
 import pandas as pd
+import smtplib
 
 from datetime import datetime
 from openpyxl.styles import Font, Alignment, Border, Side, PatternFill, numbers, NamedStyle

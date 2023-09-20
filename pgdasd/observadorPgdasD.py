@@ -1,7 +1,6 @@
 import os
 import shutil
 import time
-import subprocess
 import sys
 import logging
 import threading
@@ -9,8 +8,8 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import platform
 
-from leitorPgdasD import leitorPgdasD
-from validadorReceitaBruta import validadorReceitaBruta
+from pgdasd.leitorPgdasD import leitorPgdasD
+from functions.validadorReceitaBruta import validadorReceitaBruta
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -41,18 +40,11 @@ def process_pdf(pdf_path):
 
     # Especifique o caminho completo do arquivo PDF que você deseja mover
     pdf_path = pdf_path
-
-    processamentoReceita = False
     
     if processo[0] == "Processado com sucesso":
-        # validarReceita = validadorReceitaBruta(processo[1])
-        # if validarReceita == 'Processado com sucesso':
+
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
-        # processoCompleto = True
-        #else:
-        #    dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado com erro"
-        #    processoCompleto = False
-        #    logging.info(validarReceita)
+
     else:
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado com erro"
         logging.info(processo[0])

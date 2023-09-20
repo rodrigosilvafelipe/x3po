@@ -2,16 +2,13 @@ import os
 import re
 import fitz
 import json
-import openpyxl
 import math
-import time
 import pandas as pd
 
-from validadorReceitaBruta import validadorReceitaBruta
-from obterSalarioMinimo import obterSalarioMinimo
+from functions.validadorReceitaBruta import validadorReceitaBruta
+from scraping.obterSalarioMinimo import obterSalarioMinimo
 
 from datetime import datetime
-from openpyxl.styles import Font, Alignment, Border, Side, PatternFill, numbers, NamedStyle
 
 def leitorPgdasD(path):
 
@@ -470,6 +467,3 @@ def leitorPgdasD(path):
         return ['Erro ao tentar processar o documento', e]
 
         # print(e)
-
-path = input("cami: ")
-leitorPgdasD(path)
