@@ -8,6 +8,7 @@ import time
 import pandas as pd
 
 from validadorReceitaBruta import validadorReceitaBruta
+from obterSalarioMinimo import obterSalarioMinimo
 
 from datetime import datetime
 from openpyxl.styles import Font, Alignment, Border, Side, PatternFill, numbers, NamedStyle
@@ -338,6 +339,41 @@ def leitorPgdasD(path):
 
                 fopagMinima = math.ceil(fopagMinima)
 
+                with open("Z:\\RPA\\Folha Pró-Labore\\Salário Mínimo\\Consulta Salario Minimo.json", 'r') as arquivo_json:
+                    # Leia o conteúdo do arquivo JSON
+                    dados_json = json.load(arquivo_json)
+
+                consultaSalarioData = dados_json[0]['consulta']
+                consultaSalarioData = datetime.strptime(consultaSalarioData, "%d/%m/%Y %H:%M:%S")
+                
+                agora = datetime.now()
+                diferenca = agora - consultaSalarioData
+
+                if diferenca.days > 1:
+                    obterSalarioMinimo()
+                    with open("Z:\\RPA\\Folha Pró-Labore\\Salário Mínimo\\Consulta Salario Minimo.json", 'r') as arquivo_json:
+                        # Leia o conteúdo do arquivo JSON
+                        dados_json = json.load(arquivo_json)
+                
+                mes_desejado = periodoApuracao[-7:]
+                
+                salario_encontrado = None
+                
+                for item in dados_json:
+                    if "periodo" in item and item["periodo"] == mes_desejado:
+                        salario_encontrado = item.get("salario")
+                        break
+
+                salarioMinimoPeriodo = salario_encontrado.replace(".", "")
+                salarioMinimoPeriodo = salarioMinimoPeriodo.replace(",", ".")
+                salarioMinimoPeriodo = int(salarioMinimoPeriodo)
+
+                if fopagMinima < salarioMinimoPeriodo:
+                    fopagMinima = salarioMinimoPeriodo
+
+                if sujeitoFatorR == "Não":
+                    fopagMinima = salarioMinimoPeriodo
+
                 linha_dado = [
                     "PGDASD",
                     nDeclaracao,
@@ -435,5 +471,5 @@ def leitorPgdasD(path):
 
         # print(e)
 
-# path = input("cami: ")
-# leitorPgdasD(path)
+path = input("cami: ")
+leitorPgdasD(path)
