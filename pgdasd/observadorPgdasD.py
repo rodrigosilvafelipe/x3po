@@ -10,6 +10,7 @@ import platform
 
 from pgdasd.leitorPgdasD import leitorPgdasD
 from functions.validadorReceitaBruta import validadorReceitaBruta
+from functions.enviarEmail import enviarEmail
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -46,6 +47,13 @@ def process_pdf(pdf_path):
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
 
     else:
+        configEmail = {
+            'assunto': "Erro ao processar declaração do simples nacional",
+            'mensagem': f"{processo[1]}\n",
+            'pdf64': pdf_path,
+            'nomeDocumento': os.path.basename(pdf_path)
+        }
+        enviarEmail(configEmail)
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado com erro"
         logging.info(processo[0])
         logging.info(processo[1])
@@ -90,7 +98,7 @@ if __name__ == "__main__":
         if len(sys.argv) == 2 and sys.argv[1] == "--start":
             run_monitor()
         else:
-            print("Uso: python script.py --start")
+            print("Uso: python observadorPgdasD.py --start")
     elif platform.system() == 'Linux':
         run_monitor()
     else:

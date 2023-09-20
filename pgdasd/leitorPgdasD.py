@@ -460,7 +460,9 @@ def leitorPgdasD(path):
                     # Salva o conteúdo atualizado de volta no arquivo
                     with open(arquivo_texto, 'w') as arquivo:
                         arquivo.writelines(linhas_ordenadas)
-
+        if anexoFatorR != "Anexo III":
+            return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
+        
         return ['Processado com sucesso', arquivo_texto]
 
     except Exception as e:
