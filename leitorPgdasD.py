@@ -7,23 +7,24 @@ import pandas as pd
 from scraping.obterSalarioMinimo import obterSalarioMinimo
 from datetime import datetime
 
-def leitorPgdasD(path):
-
+def identificaDeclaracao(texto):
     # expressão regular para identificar se é uma declaração do simples nacional
     identificaDeclaracao_regex = r"Programa Gerador do Documento de Arrecadação\ndo Simples Nacional - Declaratório"
 
     try:
 
         # usar expressão regular para identificar se é uma declaração do simples nacional
-        match_identificaDeclaracao = re.search(identificaDeclaracao_regex, pdf_text, re.DOTALL)
+        match_identificaDeclaracao = re.search(identificaDeclaracao_regex, texto, re.DOTALL)
 
-        if match_identificaDeclaracao:
-            print("Declaração identificada")
-    
+        if match_identificaDeclaracao == None:
+            return False
+        else:
+            return True
+
     except Exception as e:
-            
-            return ['Erro ao tentar processar o documento', 'Documento fornecido não é uma declaração do simples nacional!']
+            return False
 
+def leitorPgdasD(path):
 
     # expressão regular para extrair o Período de Apuração
     periodoApuracao_regex = r"Período de Apuração:(.*?)\n\.\n1\. Identificação do Contribuinte"
@@ -82,6 +83,9 @@ def leitorPgdasD(path):
                     texto = pagina.get_text()
                     pdf_text += str(texto)
 
+                if identificaDeclaracao(pdf_text) == False:
+                    return ["Erro", "O documento fornecido não é uma declaração do Simples Nacional!"]
+                
                 # usar expressão regular para extrair o Período de Apuração
                 match_periodoApuracao = re.search(
                     periodoApuracao_regex, pdf_text, re.DOTALL)
@@ -484,3 +488,4 @@ def leitorPgdasD(path):
         return ['Erro ao tentar processar o documento', e]
 
         # print(e)
+

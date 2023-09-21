@@ -29,3 +29,15 @@
 2023-09-21 00:52:33,305 - Enviando email com detalhaes.
 2023-09-21 00:52:47,968 - Email enviado
 2023-09-21 00:52:48,014 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\PGDASD-DECLARACAO-41064121202106003.pdf
+2023-09-21 18:14:42,859 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-21 18:15:08,557 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DISTRATO - Contabilidade [assinado].pdf
+2023-09-21 18:15:10,576 - Processo iniciado
+2023-09-21 18:15:10,670 - Erro
+2023-09-21 18:15:10,670 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-09-21 18:15:10,670 - Enviando email com detalhaes.
+2023-09-21 18:15:15,956 - Email enviado
+2023-09-21 18:15:15,987 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\DISTRATO - Contabilidade [assinado].pdf
+2023-09-21 18:15:43,126 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202111001.pdf
+2023-09-21 18:15:45,138 - Processo iniciado
+2023-09-21 18:15:45,200 - Documento processado com sucesso
+2023-09-21 18:15:45,232 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202111001.pdf
