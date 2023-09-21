@@ -12,11 +12,18 @@ def leitorPgdasD(path):
     # expressão regular para identificar se é uma declaração do simples nacional
     identificaDeclaracao_regex = r"Programa Gerador do Documento de Arrecadação\ndo Simples Nacional - Declaratório"
 
-    # usar expressão regular para identificar se é uma declaração do simples nacional
-    match_identificaDeclaracao = re.search(identificaDeclaracao_regex, pdf_text, re.DOTALL)
+    try:
 
-    if not match_identificaDeclaracao:
-        return ['Erro ao tentar processar o documento', 'Documento fornecido não é uma declaração do simples nacional!']
+        # usar expressão regular para identificar se é uma declaração do simples nacional
+        match_identificaDeclaracao = re.search(identificaDeclaracao_regex, pdf_text, re.DOTALL)
+
+        if match_identificaDeclaracao:
+            print("Declaração identificada")
+    
+    except Exception as e:
+            
+            return ['Erro ao tentar processar o documento', 'Documento fornecido não é uma declaração do simples nacional!']
+
 
     # expressão regular para extrair o Período de Apuração
     periodoApuracao_regex = r"Período de Apuração:(.*?)\n\.\n1\. Identificação do Contribuinte"
@@ -369,11 +376,11 @@ def leitorPgdasD(path):
 
                 salarioMinimoPeriodo = salario_encontrado.replace(".", "")
                 salarioMinimoPeriodo = salarioMinimoPeriodo.replace(",", ".")
-                salarioMinimoPeriodo = int(salarioMinimoPeriodo)
-
+                salarioMinimoPeriodo = float(salarioMinimoPeriodo)
+                
                 if fopagMinima < salarioMinimoPeriodo:
                     fopagMinima = salarioMinimoPeriodo
-
+                
                 if sujeitoFatorR == "Não":
                     fopagMinima = salarioMinimoPeriodo
 
@@ -383,7 +390,7 @@ def leitorPgdasD(path):
                     cnpj,
                     nome_empresarial,
                     aberturaCnpj,
-                    periodoApuracao,
+                    periodoApuracao[-10:],
                     rpa[0],
                     rpa[1],
                     rpa[2],
@@ -410,7 +417,7 @@ def leitorPgdasD(path):
                 # Especifique o nome do arquivo de texto
                 raiz_cnpj = ''.join(filter(str.isdigit, cnpj))
                 arquivo_texto = f"Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\{raiz_cnpj}.txt"
-
+                
                 # if os.path.isfile(arquivo_texto):
                 #     rbt13 = round(receita + rbt12Check, 2)
                 #     check = validadorReceitaBruta(arquivo_texto, periodoApuracao, rbt13)
@@ -442,14 +449,15 @@ def leitorPgdasD(path):
                             linhas[i] = texto_a_adicionar + '\n'
                             ja_existe = True
                             break
-
+                    
                     # Se a linha não existir, adiciona a nova linha ao conteúdo
                     if not ja_existe:
                         linhas.append(texto_a_adicionar + '\n')
-
+                    
                     # Função para extrair a data do campo 6 (assumindo que o campo é uma string no formato "DD/MM/AAAA")
                     def extrair_data(linha):
                         campos = linha.strip().split('|')
+                        
                         if len(campos) > 5:
                             data_str = campos[5]  # Assumindo que o campo 6 contém a data no formato "DD/MM/AAAA"
                             try:
@@ -462,7 +470,7 @@ def leitorPgdasD(path):
 
                     # Ordenar as linhas com base nas datas
                     linhas_ordenadas = sorted(linhas, key=extrair_data)
-
+                    
                     # Salva o conteúdo atualizado de volta no arquivo
                     with open(arquivo_texto, 'w') as arquivo:
                         arquivo.writelines(linhas_ordenadas)
@@ -472,6 +480,7 @@ def leitorPgdasD(path):
         return ['Processado com sucesso', arquivo_texto]
 
     except Exception as e:
+        print(e)
         return ['Erro ao tentar processar o documento', e]
 
         # print(e)

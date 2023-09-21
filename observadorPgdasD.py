@@ -30,6 +30,7 @@ class PDFHandler(FileSystemEventHandler):
             with thread_semaphore:
                 # Iniciar um thread para processar o PDF
                 time.sleep(2)
+                logging.info("Processo iniciado")
                 pdf_processing_thread = threading.Thread(target=process_pdf, args=(event.src_path,))
                 pdf_processing_thread.start()
 
