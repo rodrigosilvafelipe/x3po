@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # Caminho relativo para o arquivo "observadorPgdasD.py" a partir do diretório atual
-caminho_relativo_script = "pgdasd/observadorPgdasD.py"
+caminho_relativo_script = "observadorPgdasD.py"
 
 # Obtenha o caminho absoluto para o arquivo "observadorPgdasD.py" usando o caminho relativo
 caminho_completo_script = os.path.abspath(caminho_relativo_script)
@@ -20,3 +20,4 @@ if resultado.returncode == 0:
 else:
     print("Erro ao executar o comando:")
     print(resultado.stderr)
+    

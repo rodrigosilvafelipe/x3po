@@ -1,0 +1,16 @@
+2023-09-20 23:23:31,892 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-20 23:25:25,307 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\G. C NEVES.pdf
+2023-09-20 23:25:43,316 - Erro ao tentar processar o documento
+2023-09-20 23:25:43,316 - local variable 'rbt12' referenced before assignment
+2023-09-20 23:25:43,392 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\G. C NEVES.pdf
+2023-09-20 23:40:14,213 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-20 23:40:23,287 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DARF_MAED_50978854000115_200920230911299980.pdf
+2023-09-20 23:46:36,066 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-20 23:46:52,548 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DARF_MAED_50978854000115_200920230911299980.pdf
+2023-09-20 23:47:47,020 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-20 23:47:59,108 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DARF_MAED_50978854000115_200920230911299980.pdf
+2023-09-20 23:48:16,815 - Erro ao tentar processar o documento
+2023-09-20 23:48:16,815 - local variable 'rbt12' referenced before assignment
+2023-09-20 23:48:16,863 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\DARF_MAED_50978854000115_200920230911299980.pdf
+2023-09-20 23:54:04,860 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-20 23:54:07,912 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DARF_MAED_33776924000133_200920230911482015.pdf

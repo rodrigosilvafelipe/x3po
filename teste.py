@@ -2,14 +2,11 @@ import os
 import re
 import fitz
 import json
-import openpyxl
 import math
 import time
 import pandas as pd
 import smtplib
 
-from datetime import datetime
-from openpyxl.styles import Font, Alignment, Border, Side, PatternFill, numbers, NamedStyle
 
 def leitorPgdasD(path):
 
@@ -27,6 +24,9 @@ def leitorPgdasD(path):
 
     # caminho para a pasta contendo os arquivos PDF
     pasta = path
+
+    # expressão regular para extrair o Período de Apuração
+    identificaDeclaracao_regex = r"Programa Gerador do Documento de Arrecadação\ndo Simples Nacional - Declaratório"
 
     # expressão regular para extrair o Período de Apuração
     periodoApuracao_regex = r"Período de Apuração:(.*?)\n\.\n1\. Identificação do Contribuinte"
@@ -111,6 +111,13 @@ def leitorPgdasD(path):
                     texto = pagina.get_text()
                     pdf_text += str(texto)
 
+                # print(pdf_text)
+                
+
+                # usar expressão regular para extrair o Período de Apuração
+                match_identificaDeclaracao = re.search(
+                    identificaDeclaracao_regex, pdf_text, re.DOTALL)
+
                 # usar expressão regular para extrair o Período de Apuração
                 match_periodoApuracao = re.search(
                     periodoApuracao_regex, pdf_text, re.DOTALL)
@@ -160,6 +167,16 @@ def leitorPgdasD(path):
                 # usar expressão regular para extrair o valor do Total do Débito Exigível
                 match_debitoExigivel = re.search(
                     debitoExigivel_regex, pdf_text, re.DOTALL)
+
+                if not match_identificaDeclaracao:
+                    print("sai do processamento com erro dizendo que não é uma declaração do simples nacional")
+
+                    # print(match_identificaDeclaracao.group(0).strip())
+
+                    # if match_identificaDeclaracao.group(0).strip() == "Programa Gerador do Documento de Arrecadação\ndo Simples Nacional - Declaratório":
+                    #     print("sai do processamento com erro dizendo que não é uma declaração do simples nacional")
+
+                    return
 
                 if match_periodoApuracao:
                     periodoApuracao = match_periodoApuracao.group(

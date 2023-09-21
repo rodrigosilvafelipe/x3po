@@ -4,12 +4,10 @@ import time
 import sys
 import logging
 import threading
+import platform
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-import platform
-
 from leitorPgdasD import leitorPgdasD
-from functions.validadorReceitaBruta import validadorReceitaBruta
 from functions.enviarEmail import enviarEmail
 
 # Defina o caminho da pasta que você deseja monitorar
@@ -43,20 +41,25 @@ def process_pdf(pdf_path):
     pdf_path = pdf_path
     
     if processo[0] == "Processado com sucesso":
-
+        
+        logging.info(f"Documento processado com sucesso")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
 
     else:
+        logging.info(processo[0])
+        logging.info(processo[1])
         configEmail = {
             'assunto': "Erro ao processar declaração do simples nacional",
             'mensagem': f"{processo[1]}\n",
             'pdf64': pdf_path,
             'nomeDocumento': os.path.basename(pdf_path)
         }
-        enviarEmail(configEmail)
+        logging.info("Enviando email com detalhaes.")
+        email = enviarEmail(configEmail)
+        if email['execução'] == False:
+            logging.info("Não foi possível enviar o e-mail.")
+        logging.info("Email enviado")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado com erro"
-        logging.info(processo[0])
-        logging.info(processo[1])
 
     # Verifique se o arquivo PDF existe antes de mover
     if os.path.exists(pdf_path):

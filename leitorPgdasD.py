@@ -4,13 +4,19 @@ import fitz
 import json
 import math
 import pandas as pd
-
-from functions.validadorReceitaBruta import validadorReceitaBruta
 from scraping.obterSalarioMinimo import obterSalarioMinimo
-
 from datetime import datetime
 
 def leitorPgdasD(path):
+
+    # expressão regular para identificar se é uma declaração do simples nacional
+    identificaDeclaracao_regex = r"Programa Gerador do Documento de Arrecadação\ndo Simples Nacional - Declaratório"
+
+    # usar expressão regular para identificar se é uma declaração do simples nacional
+    match_identificaDeclaracao = re.search(identificaDeclaracao_regex, pdf_text, re.DOTALL)
+
+    if not match_identificaDeclaracao:
+        return ['Erro ao tentar processar o documento', 'Documento fornecido não é uma declaração do simples nacional!']
 
     # expressão regular para extrair o Período de Apuração
     periodoApuracao_regex = r"Período de Apuração:(.*?)\n\.\n1\. Identificação do Contribuinte"
