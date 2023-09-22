@@ -8,6 +8,7 @@ caminho_relativo_script = "observadorPgdasD.py"
 caminho_completo_script = os.path.abspath(caminho_relativo_script)
 
 # Comando que você deseja executar
+# comando = f"python {caminho_completo_script} --start"
 comando = f"python {caminho_completo_script} --start"
 
 # Execute o comando no Windows

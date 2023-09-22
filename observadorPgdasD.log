@@ -1,0 +1,30 @@
+2023-09-22 17:57:38,361 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 18:00:35,000 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
+2023-09-22 18:00:37,011 - Processo iniciado
+2023-09-22 18:00:37,072 - Erro
+2023-09-22 18:00:37,072 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-09-22 18:00:37,072 - Enviando email com detalhaes.
+2023-09-22 18:03:46,019 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 18:03:50,850 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
+2023-09-22 18:03:52,861 - Processo iniciado
+2023-09-22 18:03:52,909 - Erro
+2023-09-22 18:03:52,909 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-09-22 18:03:52,909 - Enviando email com detalhaes.
+2023-09-22 18:03:57,228 - Email enviado
+2023-09-22 18:03:57,265 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
+2023-09-22 18:07:14,364 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 18:07:21,077 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
+2023-09-22 18:07:23,082 - Processo iniciado
+2023-09-22 18:07:23,131 - Erro
+2023-09-22 18:07:23,131 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-09-22 18:07:23,131 - Enviando email com detalhaes.
+2023-09-22 18:07:27,703 - Email enviado
+2023-09-22 18:07:27,754 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
+2023-09-22 18:11:29,868 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 18:11:38,516 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
+2023-09-22 18:11:40,522 - Processo iniciado
+2023-09-22 18:11:40,564 - Erro
+2023-09-22 18:11:40,564 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-09-22 18:11:40,564 - Enviando email com detalhaes.
+2023-09-22 18:11:43,914 - Email enviado
+2023-09-22 18:11:43,949 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf

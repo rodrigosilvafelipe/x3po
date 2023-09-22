@@ -5,7 +5,6 @@ import sys
 import logging
 import threading
 import platform
-import subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from leitorPgdasD import leitorPgdasD
@@ -14,11 +13,13 @@ from functions.enviarEmail import enviarEmail
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
 
-# Caminho para o módulo utilizado para enviar e-mail
-enviarEmail_path = 'C:\\Users\\rodri\\Documents\\X3PO\\x3po\\enviarEmail.exe'
+# Obtém o diretório onde o arquivo .exe está localizado
+exe_dir = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
 
-# Configurar o registro para o arquivo de log
-log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'observadorPgdasD.log')
+# Caminho absoluto para o arquivo de log
+log_file = os.path.join(exe_dir, 'observadorPgdasD.log')
+
+# Configuração do registro
 logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Crie um semáforo para controlar o acesso concorrente
@@ -59,20 +60,14 @@ def process_pdf(pdf_path):
             'pdf64': pdf_path,
             'nomeDocumento': os.path.basename(pdf_path)
         }
-        args = ['--para', 'x3po@escritax.com.br', '--assunto', configEmail['assunto'], '--mensagem', configEmail['mensagem'], '--pdf64', configEmail['pdf64'], '--nomeDocumento', configEmail['nomeDocumento']]
+        
         logging.info("Enviando email com detalhaes.")
-        # email = enviarEmail(configEmail)
-        try:
-            # Execute o executável como um subprocesso
-            subprocess.run([enviarEmail_path] + args, check=True)
-            email = True
-        except subprocess.CalledProcessError as e:
-            email = False
-            print(f"Erro ao executar o subprocesso: {e}")
-        # email = subprocess.run([enviarEmail_path] + args, check=True)
-        if email == False:
+        email = enviarEmail(configEmail)
+     
+        if email['execução'] == False:
             logging.info("Não foi possível enviar o e-mail.")
-        logging.info("Email enviado")
+        else:
+            logging.info("Email enviado")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado com erro"
 
     # Verifique se o arquivo PDF existe antes de mover
