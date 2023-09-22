@@ -30,11 +30,6 @@ def enviarEmail(config):
         # Anexa o arquivo PDF
         if "pdf64" in config:
 
-            # pdf_base64 = config["pdf64"]
-            # pdf_anexo = MIMEApplication(base64.b64decode(pdf_base64), Name=config["nomePdf64"])
-            # pdf_anexo["Content-Disposition"] = f'attachment; filename="{config["nomePdf64"]}"'
-            # msg.attach(pdf_anexo)
-
             # Abre o arquivo PDF em modo binário
             with open(config["pdf64"], 'rb') as pdf_file:
                 # Lê o conteúdo do arquivo PDF
