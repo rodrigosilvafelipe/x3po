@@ -28,3 +28,58 @@
 2023-09-22 18:11:40,564 - Enviando email com detalhaes.
 2023-09-22 18:11:43,914 - Email enviado
 2023-09-22 18:11:43,949 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
+2023-09-22 22:32:40,749 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:33:50,566 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:34:24,729 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:34:26,740 - Processo iniciado
+2023-09-22 22:34:27,119 - Erro ao tentar processar o documento
+2023-09-22 22:34:27,119 - [Errno 2] No such file or directory: 'start-fopag-41.064.121/0001-84'
+2023-09-22 22:34:27,119 - Enviando email com detalhaes.
+2023-09-22 22:34:42,104 - Email enviado
+2023-09-22 22:34:42,190 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:36:27,031 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:36:39,281 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:36:41,282 - Processo iniciado
+2023-09-22 22:36:41,551 - Erro ao tentar processar o documento
+2023-09-22 22:36:41,551 - [Errno 2] No such file or directory: 'Z:\\RPA\\Folha Pró-Labore\\Start\\start-fopag-41.064.121/0001-84-CAMILA CESAR SERVICOS MEDICOS LTDA.txt'
+2023-09-22 22:36:41,551 - Enviando email com detalhaes.
+2023-09-22 22:36:56,356 - Email enviado
+2023-09-22 22:36:56,486 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:39:04,584 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:39:10,101 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:39:12,114 - Processo iniciado
+2023-09-22 22:39:12,355 - Documento processado com sucesso
+2023-09-22 22:39:12,396 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:40:46,418 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:40:58,310 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:41:00,321 - Processo iniciado
+2023-09-22 22:41:00,533 - Documento processado com sucesso
+2023-09-22 22:41:00,570 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:43:42,634 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 22:43:51,934 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 22:43:53,946 - Processo iniciado
+2023-09-22 22:43:54,231 - Documento processado com sucesso
+2023-09-22 22:43:54,262 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:29:37,765 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 23:34:16,936 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 23:34:52,116 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:34:54,134 - Processo iniciado
+2023-09-22 23:34:54,512 - Documento processado com sucesso
+2023-09-22 23:34:54,544 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:39:17,825 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 23:43:23,104 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-22 23:43:33,636 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:43:35,640 - Processo iniciado
+2023-09-22 23:43:35,891 - Documento processado com sucesso
+2023-09-22 23:43:35,891 - Acessando Makro
+2023-09-22 23:43:56,196 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:45:22,672 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:45:24,684 - Processo iniciado
+2023-09-22 23:45:24,952 - Documento processado com sucesso
+2023-09-22 23:45:24,952 - Acessando Makro
+2023-09-22 23:45:44,764 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:48:26,603 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-22 23:48:28,612 - Processo iniciado
+2023-09-22 23:48:28,835 - Documento processado com sucesso
+2023-09-22 23:48:28,835 - Acessando Makro
+2023-09-22 23:48:49,122 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
