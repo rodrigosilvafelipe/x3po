@@ -56,6 +56,24 @@ def esperar_elemento_tag(driver, tag_elemento, tempo_maximo_espera=60):
     # Se o loop for concluído sem encontrar o elemento
     raise Exception(f"Elemento xpath '{tag_elemento}' não encontrado após {tempo_maximo_espera} segundos")
 
+def esperar_elemento_class(driver, classe_elemento, tempo_maximo_espera=60):
+    for _ in range(tempo_maximo_espera):
+        try:
+            elemento = driver.find_element(By.CLASS_NAME, classe_elemento)
+            if elemento:
+                # elemento = WebDriverWait(driver, 10).until(
+                #     EC.element_to_be_clickable((By.XPATH, xpath_elemento))
+                # )
+                return elemento
+        except Exception as e:
+            # Elemento não encontrado, aguarde 1 segundo e tente novamente
+            pass
+
+        time.sleep(1)  # Aguarde 1 segundo entre as tentativas
+
+    # Se o loop for concluído sem encontrar o elemento
+    raise Exception(f"Elemento xpath '{classe_elemento}' não encontrado após {tempo_maximo_espera} segundos")
+
 def clicar(elemento):
     for _ in range(60):
         try:

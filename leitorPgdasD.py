@@ -489,7 +489,7 @@ def leitorPgdasD(path):
         with open(nomeArquivoStartFopag, 'w') as arquivo:
                         arquivo.write(f"{arquivoStartFopag}\n")
         
-        return ['Processado com sucesso', arquivo_texto]
+        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
 
     except Exception as e:
         print(e)

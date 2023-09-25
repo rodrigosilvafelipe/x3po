@@ -13,7 +13,12 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from leitorPgdasD import leitorPgdasD
 from functions.enviarEmail import enviarEmail
+from functions.alterarPeriodoTrabalho import definir_periodo_trabalho as periodoTrabalho
+from functions.alterarEmpresa import alterar_empresa
 from acessarMakro import fazer_login_makro
+from functions.gerarRelatorioRelacaoEmpregados import gerarRelatorioRelacaoEmpregados
+from functions.fecharToasts import fecharToast
+from functions.renomearRelatorioDadosEmpregados import renomearRelatorio
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -44,7 +49,7 @@ class PDFHandler(FileSystemEventHandler):
                 pdf_processing_thread = threading.Thread(target=process_pdf, args=(event.src_path,))
                 pdf_processing_thread.start()
 
-def acessar_makro():
+def acessar_makro(info):
     logging.info("Acessando Makro")
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_experimental_option("prefs", {
@@ -62,6 +67,10 @@ def acessar_makro():
     senha = "Escritax@X3PO"
     try:
         fazer_login_makro(driver, usuario, senha)
+        periodoTrabalho(driver, info['periodoInicial'])
+        alterar_empresa(driver, info['empresa'])
+        gerarRelatorioRelacaoEmpregados(driver, info)
+        renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
         time.sleep(10)
         driver.quit()
     except Exception as e:
@@ -76,10 +85,12 @@ def process_pdf(pdf_path):
     
     if processo[0] == "Processado com sucesso":
         
-        logging.info(f"Documento processado com sucesso")
+        logging.info(f"Documento processado com sucesso.")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
+        info = processo[2]
+        logging.info(f"info ----- {info}")
 
-        acessar_makro()
+        acessar_makro(info)
 
     else:
         logging.info(processo[0])

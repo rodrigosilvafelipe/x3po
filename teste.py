@@ -1,45 +1,25 @@
-import subprocess
 import os
-import threading
+import glob
 
-# Função para executar o primeiro script
-def executar_script1():
-    caminho_relativo_script = "observadorPgdasD.py"
-    caminho_completo_script = os.path.abspath(caminho_relativo_script)
-    comando = f"python {caminho_completo_script} --start"
-    resultado = subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+# Definir o diretório onde os arquivos estão localizados
+diretorio = r"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada"
+
+# Criar um padrão de busca para encontrar arquivos que começam com "CadEmpregadosIdadeTempoEmpresa"
+padrao = os.path.join(diretorio, "CadEmpregadosIdadeTempoEmpresa*")
+
+# Usar glob para encontrar todos os arquivos que correspondem ao padrão
+arquivos_encontrados = glob.glob(padrao)
+
+# Verificar se algum arquivo foi encontrado
+if not arquivos_encontrados:
+    print("Nenhum arquivo encontrado.")
+else:
+    # Pegar o primeiro arquivo encontrado
+    arquivo_antigo = arquivos_encontrados[0]
     
-    if resultado.returncode == 0:
-        print("Script 1 executado com sucesso:")
-        print(resultado.stdout)
-    else:
-        print("Erro ao executar o Script 1:")
-        print(resultado.stderr)
-
-# Função para executar o segundo script
-def executar_script2():
-    caminho_relativo_script2 = "observadorStartFopag.py"
-    caminho_completo_script2 = os.path.abspath(caminho_relativo_script2)
-    comando2 = f"python {caminho_completo_script2} --start"
-    resultado2 = subprocess.run(comando2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    # Definir o novo nome do arquivo
+    novo_nome = os.path.join(diretorio, "NovoNomeDoArquivo.xlsx")  # Substitua pela extensão correta
     
-    if resultado2.returncode == 0:
-        print("Script 2 executado com sucesso:")
-        print(resultado2.stdout)
-    else:
-        print("Erro ao executar o Script 2:")
-        print(resultado2.stderr)
-
-# Crie duas threads para executar os scripts
-thread1 = threading.Thread(target=executar_script1)
-thread2 = threading.Thread(target=executar_script2)
-
-# Inicie as threads
-thread1.start()
-thread2.start()
-
-# Aguarde até que ambas as threads terminem
-thread1.join()
-thread2.join()
-
-print("Ambas as threads terminaram de executar")
+    # Renomear o arquivo
+    os.rename(arquivo_antigo, novo_nome)
+    print(f"Arquivo {arquivo_antigo} renomeado para {novo_nome}")
