@@ -21,3 +21,4 @@ if resultado.returncode == 0:
 else:
     print("Erro ao executar o comando:")
     print(resultado.stderr)
+

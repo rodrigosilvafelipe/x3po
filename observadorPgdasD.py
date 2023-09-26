@@ -21,6 +21,7 @@ from functions.fecharToasts import fecharToast
 from functions.renomearRelatorioDadosEmpregados import renomearRelatorio
 from functions.extratorDadosRelacaoEmpregados import dadosRelacaoEmpregados
 from functions.processaDados import processaDados
+from functions.limparPasta import limparPasta
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -35,21 +36,29 @@ log_file = os.path.join(exe_dir, 'observadorPgdasD.log')
 logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Crie um semáforo para controlar o acesso concorrente
-thread_semaphore = threading.Semaphore()
+thread_semaphore = threading.Semaphore(1)
 
 class PDFHandler(FileSystemEventHandler):
     def on_created(self, event):
+        time.sleep(2)
         if event.is_directory:
             return
         if event.src_path.lower().endswith('.pdf'):
             logging.info(f"PDF detectado: {event.src_path}")
-            # Use o semáforo para adquirir um bloqueio antes de iniciar a thread
-            with thread_semaphore:
-                # Iniciar um thread para processar o PDF
-                time.sleep(2)
-                logging.info("Processo iniciado")
-                pdf_processing_thread = threading.Thread(target=process_pdf, args=(event.src_path,))
-                pdf_processing_thread.start()
+
+            # Adquire o semáforo antes de iniciar a nova thread
+            thread_semaphore.acquire()
+
+            def thread_target():
+                try:
+                    process_pdf(event.src_path)
+                finally:
+                    # Libera o semáforo quando a thread terminar
+                    thread_semaphore.release()
+
+             # Inicia um thread para processar o PDF
+            pdf_processing_thread = threading.Thread(target=thread_target)
+            pdf_processing_thread.start()
 
 def acessar_makro(info):
     logging.info("Acessando Makro")
@@ -76,18 +85,34 @@ def acessar_makro(info):
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
         dados = dadosRelacaoEmpregados(arquivo)
-        logging.info(dados)
+        if dados['execução'] == False:
+            limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
+            configEmail = {
+                'assunto': "Erro ao processar relação de empregados",
+                'mensagem': f"Não foi possível extrair os dados do relatório de relação de empregados na empresa {info['empresa']}\n{dados['mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
         logging.info(socios['dados'])
         os.remove(arquivo)
-        logging.info(dados['dados'])
-        logging.info(dados['mensagem'])
         time.sleep(1)
         driver.quit()
     except Exception as e:
         logging.info(e)
 
 def process_pdf(pdf_path):
+    # arquivoStart = "Z:\RPA\Simples Nacional\PGDAS-D a processar\processando.txt"
+    # for _ in range(3600):
+        
+    #     if os.path.isfile(arquivoStart):
+    #         time.sleep(1)
+    #     else:                    
+    #         with open(arquivoStart, 'w') as arquivo:
+    #             arquivo.write("Processando...")
+    #         break
     
     processo = leitorPgdasD(pdf_path)
 
@@ -140,6 +165,8 @@ def process_pdf(pdf_path):
         logging.info(f"Arquivo PDF movido para {dest_path}")
     else:
         logging.info("O arquivo PDF especificado nao existe.")
+    
+    # os.remove(arquivoStart)
 
 
 def run_monitor():
