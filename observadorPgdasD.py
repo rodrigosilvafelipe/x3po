@@ -19,6 +19,8 @@ from acessarMakro import fazer_login_makro
 from functions.gerarRelatorioRelacaoEmpregados import gerarRelatorioRelacaoEmpregados
 from functions.fecharToasts import fecharToast
 from functions.renomearRelatorioDadosEmpregados import renomearRelatorio
+from functions.extratorDadosRelacaoEmpregados import dadosRelacaoEmpregados
+from functions.processaDados import processaDados
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -71,7 +73,16 @@ def acessar_makro(info):
         alterar_empresa(driver, info['empresa'])
         gerarRelatorioRelacaoEmpregados(driver, info)
         renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
-        time.sleep(10)
+        arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
+        time.sleep(1)
+        dados = dadosRelacaoEmpregados(arquivo)
+        logging.info(dados)
+        socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
+        logging.info(socios['dados'])
+        os.remove(arquivo)
+        logging.info(dados['dados'])
+        logging.info(dados['mensagem'])
+        time.sleep(1)
         driver.quit()
     except Exception as e:
         logging.info(e)
@@ -88,7 +99,6 @@ def process_pdf(pdf_path):
         logging.info(f"Documento processado com sucesso.")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
         info = processo[2]
-        logging.info(f"info ----- {info}")
 
         acessar_makro(info)
 

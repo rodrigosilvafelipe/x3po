@@ -1,261 +1,123 @@
-2023-09-22 17:57:38,361 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 18:00:35,000 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
-2023-09-22 18:00:37,011 - Processo iniciado
-2023-09-22 18:00:37,072 - Erro
-2023-09-22 18:00:37,072 - O documento fornecido não é uma declaração do Simples Nacional!
-2023-09-22 18:00:37,072 - Enviando email com detalhaes.
-2023-09-22 18:03:46,019 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 18:03:50,850 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
-2023-09-22 18:03:52,861 - Processo iniciado
-2023-09-22 18:03:52,909 - Erro
-2023-09-22 18:03:52,909 - O documento fornecido não é uma declaração do Simples Nacional!
-2023-09-22 18:03:52,909 - Enviando email com detalhaes.
-2023-09-22 18:03:57,228 - Email enviado
-2023-09-22 18:03:57,265 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
-2023-09-22 18:07:14,364 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 18:07:21,077 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
-2023-09-22 18:07:23,082 - Processo iniciado
-2023-09-22 18:07:23,131 - Erro
-2023-09-22 18:07:23,131 - O documento fornecido não é uma declaração do Simples Nacional!
-2023-09-22 18:07:23,131 - Enviando email com detalhaes.
-2023-09-22 18:07:27,703 - Email enviado
-2023-09-22 18:07:27,754 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
-2023-09-22 18:11:29,868 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 18:11:38,516 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\112.pdf
-2023-09-22 18:11:40,522 - Processo iniciado
-2023-09-22 18:11:40,564 - Erro
-2023-09-22 18:11:40,564 - O documento fornecido não é uma declaração do Simples Nacional!
-2023-09-22 18:11:40,564 - Enviando email com detalhaes.
-2023-09-22 18:11:43,914 - Email enviado
-2023-09-22 18:11:43,949 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\112.pdf
-2023-09-22 22:32:40,749 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:33:50,566 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:34:24,729 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:34:26,740 - Processo iniciado
-2023-09-22 22:34:27,119 - Erro ao tentar processar o documento
-2023-09-22 22:34:27,119 - [Errno 2] No such file or directory: 'start-fopag-41.064.121/0001-84'
-2023-09-22 22:34:27,119 - Enviando email com detalhaes.
-2023-09-22 22:34:42,104 - Email enviado
-2023-09-22 22:34:42,190 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:36:27,031 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:36:39,281 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:36:41,282 - Processo iniciado
-2023-09-22 22:36:41,551 - Erro ao tentar processar o documento
-2023-09-22 22:36:41,551 - [Errno 2] No such file or directory: 'Z:\\RPA\\Folha Pró-Labore\\Start\\start-fopag-41.064.121/0001-84-CAMILA CESAR SERVICOS MEDICOS LTDA.txt'
-2023-09-22 22:36:41,551 - Enviando email com detalhaes.
-2023-09-22 22:36:56,356 - Email enviado
-2023-09-22 22:36:56,486 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:39:04,584 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:39:10,101 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:39:12,114 - Processo iniciado
-2023-09-22 22:39:12,355 - Documento processado com sucesso
-2023-09-22 22:39:12,396 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:40:46,418 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:40:58,310 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:41:00,321 - Processo iniciado
-2023-09-22 22:41:00,533 - Documento processado com sucesso
-2023-09-22 22:41:00,570 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:43:42,634 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 22:43:51,934 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 22:43:53,946 - Processo iniciado
-2023-09-22 22:43:54,231 - Documento processado com sucesso
-2023-09-22 22:43:54,262 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:29:37,765 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 23:34:16,936 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 23:34:52,116 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:34:54,134 - Processo iniciado
-2023-09-22 23:34:54,512 - Documento processado com sucesso
-2023-09-22 23:34:54,544 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:39:17,825 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 23:43:23,104 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-22 23:43:33,636 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:43:35,640 - Processo iniciado
-2023-09-22 23:43:35,891 - Documento processado com sucesso
-2023-09-22 23:43:35,891 - Acessando Makro
-2023-09-22 23:43:56,196 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:45:22,672 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:45:24,684 - Processo iniciado
-2023-09-22 23:45:24,952 - Documento processado com sucesso
-2023-09-22 23:45:24,952 - Acessando Makro
-2023-09-22 23:45:44,764 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:48:26,603 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-22 23:48:28,612 - Processo iniciado
-2023-09-22 23:48:28,835 - Documento processado com sucesso
-2023-09-22 23:48:28,835 - Acessando Makro
-2023-09-22 23:48:49,122 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 16:49:58,830 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 16:50:46,234 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 16:50:48,246 - Processo iniciado
-2023-09-25 16:50:49,280 - Documento processado com sucesso
-2023-09-25 16:53:57,404 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 16:54:04,275 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 16:54:06,292 - Processo iniciado
-2023-09-25 16:54:06,377 - Documento processado com sucesso
-2023-09-25 16:54:54,142 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 16:54:58,227 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 16:55:00,232 - Processo iniciado
-2023-09-25 16:55:00,316 - Documento processado com sucesso.
-2023-09-25 16:55:00,316 - info ----- {'valorFopag': 6675, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/07/2023'}
-2023-09-25 16:55:00,316 - Acessando Makro
-2023-09-25 16:58:29,759 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 16:58:34,786 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 16:58:36,795 - Processo iniciado
-2023-09-25 16:58:36,888 - Documento processado com sucesso.
-2023-09-25 16:58:36,888 - info ----- {'valorFopag': 6675, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/07/2023'}
-2023-09-25 16:58:36,888 - Acessando Makro
-2023-09-25 16:59:08,364 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 17:00:30,716 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:00:31,823 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 17:00:33,846 - Processo iniciado
-2023-09-25 17:00:33,924 - Documento processado com sucesso.
-2023-09-25 17:00:33,924 - info ----- {'valorFopag': 6675, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/07/2023'}
-2023-09-25 17:00:33,924 - Acessando Makro
-2023-09-25 17:01:13,721 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 17:02:03,654 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:02:06,562 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202307001.pdf
-2023-09-25 17:02:08,573 - Processo iniciado
-2023-09-25 17:02:08,659 - Documento processado com sucesso.
-2023-09-25 17:02:08,659 - info ----- {'valorFopag': 6675, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/07/2023'}
-2023-09-25 17:02:08,659 - Acessando Makro
-2023-09-25 17:02:51,053 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:02:57,442 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:02:59,458 - Processo iniciado
-2023-09-25 17:02:59,521 - Documento processado com sucesso.
-2023-09-25 17:02:59,521 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:02:59,521 - Acessando Makro
-2023-09-25 17:03:37,778 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:21:23,879 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:21:27,611 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:21:29,634 - Processo iniciado
-2023-09-25 17:21:29,696 - Documento processado com sucesso.
-2023-09-25 17:21:29,696 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:21:29,696 - Acessando Makro
-2023-09-25 17:21:39,020 - 'WebElement' object is not iterable
-2023-09-25 17:21:41,158 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:27:40,870 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:27:43,853 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:27:45,876 - Processo iniciado
-2023-09-25 17:27:45,956 - Documento processado com sucesso.
-2023-09-25 17:27:45,956 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:27:45,956 - Acessando Makro
-2023-09-25 17:27:51,093 - 'WebElement' object is not iterable
-2023-09-25 17:27:53,218 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:31:22,516 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:31:22,928 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:31:24,947 - Processo iniciado
-2023-09-25 17:31:25,027 - Documento processado com sucesso.
-2023-09-25 17:31:25,027 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:31:25,027 - Acessando Makro
-2023-09-25 17:31:31,679 - 'WebElement' object is not iterable
-2023-09-25 17:31:33,815 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:39:06,600 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:39:09,474 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:39:11,486 - Processo iniciado
-2023-09-25 17:39:11,559 - Documento processado com sucesso.
-2023-09-25 17:39:11,559 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:39:11,559 - Acessando Makro
-2023-09-25 17:39:21,384 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,400 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,431 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,451 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,456 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,483 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,500 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,522 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,538 - Não foi possível fechar as mensagens.
-2023-09-25 17:39:21,555 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:14,591 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:40:18,807 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:40:20,831 - Processo iniciado
-2023-09-25 17:40:20,908 - Documento processado com sucesso.
-2023-09-25 17:40:20,908 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:40:20,908 - Acessando Makro
-2023-09-25 17:40:31,290 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:32,325 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:33,359 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:34,389 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:35,409 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:36,443 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:37,480 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:38,498 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:39,531 - Não foi possível fechar as mensagens.
-2023-09-25 17:40:40,550 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:25,830 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:41:29,216 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:41:31,231 - Processo iniciado
-2023-09-25 17:41:31,318 - Documento processado com sucesso.
-2023-09-25 17:41:31,318 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:41:31,318 - Acessando Makro
-2023-09-25 17:41:39,185 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:40,218 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:41,260 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:42,295 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:43,325 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:44,345 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:45,365 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:46,384 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:47,409 - Não foi possível fechar as mensagens.
-2023-09-25 17:41:48,443 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:35,824 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:42:37,500 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:42:39,514 - Processo iniciado
-2023-09-25 17:42:39,603 - Documento processado com sucesso.
-2023-09-25 17:42:39,603 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:42:39,603 - Acessando Makro
-2023-09-25 17:42:46,625 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:46,625 - 'WebElement' object is not iterable
-2023-09-25 17:42:47,660 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:47,660 - 'WebElement' object is not iterable
-2023-09-25 17:42:48,694 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:48,694 - 'WebElement' object is not iterable
-2023-09-25 17:42:49,729 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:49,730 - 'WebElement' object is not iterable
-2023-09-25 17:42:50,756 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:50,756 - 'WebElement' object is not iterable
-2023-09-25 17:42:51,775 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:51,775 - 'WebElement' object is not iterable
-2023-09-25 17:42:52,795 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:52,795 - 'WebElement' object is not iterable
-2023-09-25 17:42:53,815 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:53,815 - 'WebElement' object is not iterable
-2023-09-25 17:42:54,835 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:54,835 - 'WebElement' object is not iterable
-2023-09-25 17:42:55,852 - Não foi possível fechar as mensagens.
-2023-09-25 17:42:55,853 - 'WebElement' object is not iterable
-2023-09-25 17:53:27,967 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 17:53:32,186 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 17:53:34,200 - Processo iniciado
-2023-09-25 17:53:34,288 - Documento processado com sucesso.
-2023-09-25 17:53:34,288 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 17:53:34,288 - Acessando Makro
-2023-09-25 17:53:43,429 - Não foi possível fechar as mensagens.
-2023-09-25 17:53:43,445 - 'WebElement' object is not iterable
-2023-09-25 17:53:45,576 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:00:11,827 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 18:00:13,091 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:00:15,102 - Processo iniciado
-2023-09-25 18:00:15,177 - Documento processado com sucesso.
-2023-09-25 18:00:15,178 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 18:00:15,178 - Acessando Makro
-2023-09-25 18:01:17,412 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:12:40,749 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 18:13:00,291 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:13:02,301 - Processo iniciado
-2023-09-25 18:13:02,420 - Documento processado com sucesso.
-2023-09-25 18:13:02,420 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 18:13:02,420 - Acessando Makro
-2023-09-25 18:13:48,862 - [WinError 32] O arquivo já está sendo usado por outro processo: 'Z:\\\\RPA\\\\Folha Pró-Labore\\\\Fopag Processada\\CadEmpregadosIdadeTempoEmpresa_25_09_2023.xlsx' -> 'Z:\\\\RPA\\\\Folha Pró-Labore\\\\Fopag Processada\\CAMILA CESAR SERVICOS MEDICOS LTDA.xlsx'
-2023-09-25 18:13:51,013 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:17:02,456 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 18:17:09,319 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:17:11,333 - Processo iniciado
-2023-09-25 18:17:11,421 - Documento processado com sucesso.
-2023-09-25 18:17:11,421 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 18:17:11,421 - Acessando Makro
-2023-09-25 18:18:43,397 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-25 18:18:51,370 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202308001.pdf
-2023-09-25 18:18:53,382 - Processo iniciado
-2023-09-25 18:18:53,471 - Documento processado com sucesso.
-2023-09-25 18:18:53,471 - info ----- {'valorFopag': 3471, 'empresa': 'CAMILA CESAR SERVICOS MEDICOS LTDA', 'periodoInicial': '01/08/2023'}
-2023-09-25 18:18:53,471 - Acessando Makro
-2023-09-25 18:19:57,321 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202308001.pdf
+2023-09-25 23:20:21,091 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:20:23,112 - Processo iniciado
+2023-09-25 23:20:23,350 - Documento processado com sucesso.
+2023-09-25 23:20:23,350 - Acessando Makro
+2023-09-25 23:20:41,283 - 'dados'
+2023-09-25 23:20:43,484 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:22:23,325 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-25 23:22:31,817 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:22:33,827 - Processo iniciado
+2023-09-25 23:22:34,030 - Documento processado com sucesso.
+2023-09-25 23:22:34,030 - Acessando Makro
+2023-09-25 23:22:50,608 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
+2023-09-25 23:22:50,608 - 'dados'
+2023-09-25 23:22:52,777 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:24:18,987 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:24:20,999 - Processo iniciado
+2023-09-25 23:24:21,218 - Documento processado com sucesso.
+2023-09-25 23:24:21,218 - Acessando Makro
+2023-09-25 23:24:39,077 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'MARCELA OLINDINA DA SILVA': {'profissão': 'FAXINEIRA', 'salário': 1900.0}, 'MICHAEL MEDEIROS COSTA': {'profissão': 'Sócio', 'salário': 1320.0}}}
+2023-09-25 23:24:39,077 - [{'nomeSocio': 'MICHAEL MEDEIROS COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}]
+2023-09-25 23:24:39,096 - {'MARCELA OLINDINA DA SILVA': {'profissão': 'FAXINEIRA', 'salário': 1900.0}, 'MICHAEL MEDEIROS COSTA': {'profissão': 'Sócio', 'salário': 1320.0}}
+2023-09-25 23:24:39,096 - Processado com sucesso
+2023-09-25 23:24:46,536 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:25:25,718 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:25:27,732 - Processo iniciado
+2023-09-25 23:25:27,936 - Documento processado com sucesso.
+2023-09-25 23:25:27,952 - Acessando Makro
+2023-09-25 23:25:44,672 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}}
+2023-09-25 23:25:44,673 - [{'nomeSocio': 'CAMILA CESAR ALYRIO GONCALVES', 'proLabore': 5290.0, 'anterior': 5290.0}]
+2023-09-25 23:25:44,692 - {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}
+2023-09-25 23:25:44,692 - Processado com sucesso
+2023-09-25 23:25:52,139 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:29:32,789 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:29:34,799 - Processo iniciado
+2023-09-25 23:29:35,052 - Documento processado com sucesso.
+2023-09-25 23:29:35,052 - Acessando Makro
+2023-09-25 23:29:52,405 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}}
+2023-09-25 23:29:52,405 - [{'nomeSocio': 'CAMILA CESAR ALYRIO GONCALVES', 'proLabore': 5290.0, 'anterior': 5290.0}]
+2023-09-25 23:29:52,448 - {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}
+2023-09-25 23:29:52,455 - Processado com sucesso
+2023-09-25 23:29:59,903 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:30:19,781 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:30:21,798 - Processo iniciado
+2023-09-25 23:30:22,018 - Documento processado com sucesso.
+2023-09-25 23:30:22,018 - Acessando Makro
+2023-09-25 23:30:37,808 - [WinError 183] Não é possível criar um arquivo já existente: 'Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\CadEmpregadosIdadeTempoEmpresa_25_09_2023.xlsx' -> 'Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\AMANDA E ILONA SERVICOS MEDICOS LTDA.xlsx'
+2023-09-25 23:30:40,158 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:31:14,972 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:31:16,982 - Processo iniciado
+2023-09-25 23:31:17,140 - Documento processado com sucesso.
+2023-09-25 23:31:17,140 - Acessando Makro
+2023-09-25 23:31:33,913 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
+2023-09-25 23:31:33,923 - 'dados'
+2023-09-25 23:31:36,158 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:38:16,866 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-25 23:38:24,051 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:38:26,067 - Processo iniciado
+2023-09-25 23:38:26,255 - Documento processado com sucesso.
+2023-09-25 23:38:26,255 - Acessando Makro
+2023-09-25 23:38:43,698 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
+2023-09-25 23:38:43,698 - {'erro': True, 'mesagem': 'float division by zero - Tipo do objeto causador do erro: ZeroDivisionError'}
+2023-09-25 23:38:43,753 - {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}
+2023-09-25 23:38:43,753 - Processado com sucesso
+2023-09-25 23:38:51,185 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:41:37,834 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-09-25 23:41:47,227 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:41:49,237 - Processo iniciado
+2023-09-25 23:41:49,439 - Documento processado com sucesso.
+2023-09-25 23:41:49,439 - Acessando Makro
+2023-09-25 23:42:06,125 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
+2023-09-25 23:42:06,125 - [{'nomeSocio': 'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA', 'proLabore': 1320.0, 'anterior': 1320.0}]
+2023-09-25 23:42:06,146 - {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}
+2023-09-25 23:42:06,146 - Processado com sucesso
+2023-09-25 23:42:13,562 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
+2023-09-25 23:45:07,425 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:45:09,441 - Processo iniciado
+2023-09-25 23:45:09,722 - Documento processado com sucesso.
+2023-09-25 23:45:09,722 - Acessando Makro
+2023-09-25 23:45:27,379 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}}
+2023-09-25 23:45:27,379 - [{'nomeSocio': 'CAMILA CESAR ALYRIO GONCALVES', 'proLabore': 5290.0, 'anterior': 5290.0}]
+2023-09-25 23:45:27,423 - {'CAMILA CESAR ALYRIO GONCALVES': {'profissão': 'Sócio', 'salário': 5290.0}}
+2023-09-25 23:45:27,425 - Processado com sucesso
+2023-09-25 23:45:34,926 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41064121202207001 (1) salvar como pdf.pdf
+2023-09-25 23:46:09,259 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48504311202307001.pdf
+2023-09-25 23:46:11,275 - Processo iniciado
+2023-09-25 23:46:11,543 - Documento processado com sucesso.
+2023-09-25 23:46:11,543 - Acessando Makro
+2023-09-25 23:46:28,496 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
+2023-09-25 23:46:28,496 - [{'nomeSocio': 'FELIPE LEMOS SALES COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'YASMIN AMORIM CALEGARI', 'proLabore': 1320.0, 'anterior': 1320.0}]
+2023-09-25 23:46:28,518 - {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}
+2023-09-25 23:46:28,518 - Processado com sucesso
+2023-09-25 23:46:35,863 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48504311202307001.pdf
+2023-09-25 23:47:46,571 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:47:48,590 - Processo iniciado
+2023-09-25 23:47:48,795 - Documento processado com sucesso.
+2023-09-25 23:47:48,795 - Acessando Makro
+2023-09-25 23:48:06,157 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
+2023-09-25 23:48:06,157 - [{'nomeSocio': 'FELIPE LEMOS SALES COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'YASMIN AMORIM CALEGARI', 'proLabore': 1320.0, 'anterior': 1320.0}]
+2023-09-25 23:48:06,165 - {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}
+2023-09-25 23:48:06,165 - Processado com sucesso
+2023-09-25 23:48:13,683 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:49:52,350 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41045792202307001.pdf
+2023-09-25 23:49:54,353 - Processo iniciado
+2023-09-25 23:49:54,636 - Documento processado com sucesso.
+2023-09-25 23:49:54,636 - Acessando Makro
+2023-09-25 23:50:13,682 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
+2023-09-25 23:50:13,682 - [{'nomeSocio': 'FELIPE LEMOS SALES COSTA', 'proLabore': 1503.5, 'anterior': 1320.0}, {'nomeSocio': 'YASMIN AMORIM CALEGARI', 'proLabore': 1503.5, 'anterior': 1320.0}]
+2023-09-25 23:50:13,722 - {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}
+2023-09-25 23:50:13,722 - Processado com sucesso
+2023-09-25 23:50:21,308 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41045792202307001.pdf
+2023-09-25 23:50:59,290 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:51:01,309 - Processo iniciado
+2023-09-25 23:51:01,578 - Documento processado com sucesso.
+2023-09-25 23:51:01,578 - Acessando Makro
+2023-09-25 23:51:21,730 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
+2023-09-25 23:51:21,730 - [{'nomeSocio': 'FELIPE LEMOS SALES COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'YASMIN AMORIM CALEGARI', 'proLabore': 1320.0, 'anterior': 1320.0}]
+2023-09-25 23:51:21,743 - {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}
+2023-09-25 23:51:21,743 - Processado com sucesso
+2023-09-25 23:51:29,235 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:52:53,295 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43499502202307004 (4).pdf
+2023-09-25 23:52:55,316 - Processo iniciado
+2023-09-25 23:52:55,617 - Documento processado com sucesso.
+2023-09-25 23:52:55,617 - Acessando Makro

@@ -37,10 +37,6 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
         exportarExcel.click()
 
         time.sleep(2)
-
-        pyautogui.write(opcoes['empresa'])
-
-        time.sleep(20)
         return True
     
     except Exception as e:

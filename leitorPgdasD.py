@@ -483,13 +483,13 @@ def leitorPgdasD(path):
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
         
-        arquivoStartFopag = f"{cnpj}|{nome_empresarial}|{inicioMes}|{str(fopagMinima)}"
-        nomeArquivoStartFopag = f"Z:\\RPA\\Folha Pró-Labore\\Start\\start-fopag-{raiz_cnpj}-{nome_empresarial}.txt"
+        # arquivoStartFopag = f"{cnpj}|{nome_empresarial}|{inicioMes}|{str(fopagMinima)}"
+        # nomeArquivoStartFopag = f"Z:\\RPA\\Folha Pró-Labore\\Start\\start-fopag-{raiz_cnpj}-{nome_empresarial}.txt"
 
-        with open(nomeArquivoStartFopag, 'w') as arquivo:
-                        arquivo.write(f"{arquivoStartFopag}\n")
+        # with open(nomeArquivoStartFopag, 'w') as arquivo:
+        #                 arquivo.write(f"{arquivoStartFopag}\n")
         
-        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
+        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
 
     except Exception as e:
         print(e)

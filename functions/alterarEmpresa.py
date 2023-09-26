@@ -12,7 +12,7 @@ def alterar_empresa(driver, razao_social):
         input_filtro.click()
         time.sleep(0.5)
         input_filtro.send_keys(razao_social)
-        time.sleep(10)
+        time.sleep(1)
         pyautogui.press("enter")
         time.sleep(1)
         return True

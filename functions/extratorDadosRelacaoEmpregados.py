@@ -31,9 +31,6 @@ def dadosRelacaoEmpregados(xlsx_path):
             # Mover para a próxima linha
             row += 1
 
-        # Exibir o dicionário criado
-        print(empregados_dict)
-
         return {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': empregados_dict}
     
     except Exception as e:
