@@ -6,7 +6,7 @@ import pyautogui
 
 def definir_periodo_trabalho(driver, periodo):
     try:
-        input_data = esperar_elemento_id(driver, "EditDataInicial")
+        input_data = esperar_elemento_id(driver, "Conteudo_UserEmpresaPeriodoTrabalho_EditDataInicial")
         input_data.click()
         time.sleep(0.5)
         input_data.send_keys(periodo)

@@ -1,154 +1,24 @@
-2023-09-26 14:31:41,461 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-09-26 14:31:45,336 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-45373294202308001.pdf
-2023-09-26 14:31:45,415 - Documento processado com sucesso.
-2023-09-26 14:31:45,415 - Acessando Makro
-2023-09-26 14:31:47,345 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49911088202308001.pdf
-2023-09-26 14:32:03,208 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BRENDO TORRES COSTA DOS SANTOS': {'profissão': 'Sócio', 'salário': 6044.0}, 'JULIA COELHO BRAGA TORRES': {'profissão': 'Sócio', 'salário': 6044.0}}}
-2023-09-26 14:32:03,208 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BRENDO TORRES COSTA DOS SANTOS': {'profissão': 'Sócio', 'salário': 6044.0}, 'JULIA COELHO BRAGA TORRES': {'profissão': 'Sócio', 'salário': 6044.0}}}
-2023-09-26 14:32:03,208 - [{'nomeSocio': 'BRENDO TORRES COSTA DOS SANTOS', 'proLabore': 6043.5, 'anterior': 6044.0}, {'nomeSocio': 'JULIA COELHO BRAGA TORRES', 'proLabore': 6043.5, 'anterior': 6044.0}]
-2023-09-26 14:32:03,224 - {'BRENDO TORRES COSTA DOS SANTOS': {'profissão': 'Sócio', 'salário': 6044.0}, 'JULIA COELHO BRAGA TORRES': {'profissão': 'Sócio', 'salário': 6044.0}}
-2023-09-26 14:32:03,224 - Processado com sucesso
-2023-09-26 14:32:10,591 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-45373294202308001.pdf
-2023-09-26 14:32:10,654 - Documento processado com sucesso.
-2023-09-26 14:32:10,654 - Acessando Makro
-2023-09-26 14:32:12,598 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-46162729202308001.pdf
-2023-09-26 14:32:27,401 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAROLINE BELING': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:32:27,401 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAROLINE BELING': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:32:27,401 - [{'nomeSocio': 'CAROLINE BELING', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:32:27,425 - {'CAROLINE BELING': {'profissão': 'Sócia', 'salário': 1320.0}}
-2023-09-26 14:32:27,425 - Processado com sucesso
-2023-09-26 14:32:34,782 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49911088202308001.pdf
-2023-09-26 14:32:34,860 - Documento processado com sucesso.
-2023-09-26 14:32:34,860 - Acessando Makro
-2023-09-26 14:32:36,790 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202308001.pdf
-2023-09-26 14:32:53,677 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAMILLA BAGNO BRUNO': {'profissão': 'Sócia', 'salário': 4049.0}}}
-2023-09-26 14:32:53,677 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAMILLA BAGNO BRUNO': {'profissão': 'Sócia', 'salário': 4049.0}}}
-2023-09-26 14:32:53,677 - [{'nomeSocio': 'CAMILLA BAGNO BRUNO', 'proLabore': 4049.0, 'anterior': 4049.0}]
-2023-09-26 14:32:53,677 - {'CAMILLA BAGNO BRUNO': {'profissão': 'Sócia', 'salário': 4049.0}}
-2023-09-26 14:32:53,677 - Processado com sucesso
-2023-09-26 14:33:01,069 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-46162729202308001.pdf
-2023-09-26 14:33:01,148 - Documento processado com sucesso.
-2023-09-26 14:33:01,148 - Acessando Makro
-2023-09-26 14:33:03,083 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-44545042202308001.pdf
-2023-09-26 14:33:20,086 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAIO DE SOUSA KRETLI': {'profissão': 'Sócio', 'salário': 1302.0}}}
-2023-09-26 14:33:20,086 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAIO DE SOUSA KRETLI': {'profissão': 'Sócio', 'salário': 1302.0}}}
-2023-09-26 14:33:20,086 - [{'nomeSocio': 'CAIO DE SOUSA KRETLI', 'proLabore': 1320.0, 'anterior': 1302.0}]
-2023-09-26 14:33:20,103 - {'CAIO DE SOUSA KRETLI': {'profissão': 'Sócio', 'salário': 1302.0}}
-2023-09-26 14:33:20,103 - Processado com sucesso
-2023-09-26 14:33:27,495 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49384628202308001.pdf
-2023-09-26 14:33:27,573 - Documento processado com sucesso.
-2023-09-26 14:33:27,573 - Acessando Makro
-2023-09-26 14:33:29,510 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50963816202308002.pdf
-2023-09-26 14:33:45,243 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BRUNA DE BONA': {'profissão': 'Sócio', 'salário': 1212.0}}}
-2023-09-26 14:33:45,243 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BRUNA DE BONA': {'profissão': 'Sócio', 'salário': 1212.0}}}
-2023-09-26 14:33:45,243 - [{'nomeSocio': 'BRUNA DE BONA', 'proLabore': 1320.0, 'anterior': 1212.0}]
-2023-09-26 14:33:45,260 - {'BRUNA DE BONA': {'profissão': 'Sócio', 'salário': 1212.0}}
-2023-09-26 14:33:45,260 - Processado com sucesso
-2023-09-26 14:33:52,618 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-44545042202308001.pdf
-2023-09-26 14:33:52,696 - Documento processado com sucesso.
-2023-09-26 14:33:52,696 - Acessando Makro
-2023-09-26 14:33:54,634 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41045792202308001.pdf
-2023-09-26 14:34:10,143 - {'execução': False, 'mensagem': FileNotFoundError(2, 'No such file or directory')}
-2023-09-26 14:34:10,143 - None
-2023-09-26 14:34:14,987 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50963816202308002.pdf
-2023-09-26 14:34:15,081 - Documento processado com sucesso.
-2023-09-26 14:34:15,081 - Acessando Makro
-2023-09-26 14:34:17,007 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-47248900202308001.pdf
-2023-09-26 14:34:36,356 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BEATRIZ OLIVEIRA MUGUET': {'profissão': 'Sócio', 'salário': 3462.0}}}
-2023-09-26 14:34:36,356 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BEATRIZ OLIVEIRA MUGUET': {'profissão': 'Sócio', 'salário': 3462.0}}}
-2023-09-26 14:34:36,356 - [{'nomeSocio': 'BEATRIZ OLIVEIRA MUGUET', 'proLabore': 3462.0, 'anterior': 3462.0}]
-2023-09-26 14:34:36,361 - {'BEATRIZ OLIVEIRA MUGUET': {'profissão': 'Sócio', 'salário': 3462.0}}
-2023-09-26 14:34:36,361 - Processado com sucesso
-2023-09-26 14:34:43,733 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41045792202308001.pdf
-2023-09-26 14:34:43,827 - Documento processado com sucesso.
-2023-09-26 14:34:43,827 - Acessando Makro
-2023-09-26 14:34:45,753 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-46722756202308001.pdf
-2023-09-26 14:35:06,674 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BEATRIZ CARVALHO DA SILVA': {'profissão': 'Sócia', 'salário': 2987.0}}}
-2023-09-26 14:35:06,674 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'BEATRIZ CARVALHO DA SILVA': {'profissão': 'Sócia', 'salário': 2987.0}}}
-2023-09-26 14:35:06,674 - [{'nomeSocio': 'BEATRIZ CARVALHO DA SILVA', 'proLabore': 2987.0, 'anterior': 2987.0}]
-2023-09-26 14:35:06,691 - {'BEATRIZ CARVALHO DA SILVA': {'profissão': 'Sócia', 'salário': 2987.0}}
-2023-09-26 14:35:06,691 - Processado com sucesso
-2023-09-26 14:35:14,044 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-47248900202308001.pdf
-2023-09-26 14:35:14,138 - Documento processado com sucesso.
-2023-09-26 14:35:14,138 - Acessando Makro
-2023-09-26 14:35:16,066 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-47454714202308002.pdf
-2023-09-26 14:35:34,635 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'ANA CAROLINA RIBEIRO DE FIGUEIREDO': {'profissão': 'Sócia', 'salário': 7391.0}}}
-2023-09-26 14:35:34,635 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'ANA CAROLINA RIBEIRO DE FIGUEIREDO': {'profissão': 'Sócia', 'salário': 7391.0}}}
-2023-09-26 14:35:34,635 - [{'nomeSocio': 'ANA CAROLINA RIBEIRO DE FIGUEIREDO', 'proLabore': 7391.0, 'anterior': 7391.0}]
-2023-09-26 14:35:34,635 - {'ANA CAROLINA RIBEIRO DE FIGUEIREDO': {'profissão': 'Sócia', 'salário': 7391.0}}
-2023-09-26 14:35:34,635 - Processado com sucesso
-2023-09-26 14:35:41,997 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-46722756202308001.pdf
-2023-09-26 14:35:42,091 - Documento processado com sucesso.
-2023-09-26 14:35:42,091 - Acessando Makro
-2023-09-26 14:35:44,012 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-50807976202308001.pdf
-2023-09-26 14:35:59,162 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'Amanda Kassia de Oliveira Siara': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:35:59,162 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'Amanda Kassia de Oliveira Siara': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:35:59,162 - [{'nomeSocio': 'Amanda Kassia de Oliveira Siara', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:35:59,179 - {'Amanda Kassia de Oliveira Siara': {'profissão': 'Sócia', 'salário': 1320.0}}
-2023-09-26 14:35:59,179 - Processado com sucesso
-2023-09-26 14:36:06,548 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-47454714202308002.pdf
-2023-09-26 14:36:06,642 - Documento processado com sucesso.
-2023-09-26 14:36:06,642 - Acessando Makro
-2023-09-26 14:36:08,567 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\KECIA LEME DAS (1).pdf
-2023-09-26 14:36:28,091 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:36:28,091 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}}
-2023-09-26 14:36:28,091 - [{'nomeSocio': 'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:36:28,091 - {'AMANDA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}, 'ILONA ROBERTA BARBOSA JULIASSE DA SILVA': {'profissão': 'Sócia', 'salário': 1320.0}}
-2023-09-26 14:36:28,091 - Processado com sucesso
-2023-09-26 14:36:35,446 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-50807976202308001.pdf
-2023-09-26 14:36:35,544 - Documento processado com sucesso.
-2023-09-26 14:36:35,544 - Acessando Makro
-2023-09-26 14:36:37,464 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48504311202307001.pdf
-2023-09-26 14:36:53,159 - {'execução': False, 'mensagem': FileNotFoundError(2, 'No such file or directory')}
-2023-09-26 14:36:53,175 - None
-2023-09-26 14:36:58,108 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\KECIA LEME DAS (1).pdf
-2023-09-26 14:36:58,202 - Documento processado com sucesso.
-2023-09-26 14:36:58,202 - Acessando Makro
-2023-09-26 14:37:00,124 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202307006 (1).pdf
-2023-09-26 14:37:20,443 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:37:20,443 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:37:20,443 - [{'nomeSocio': 'FELIPE LEMOS SALES COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'YASMIN AMORIM CALEGARI', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:37:20,460 - {'FELIPE LEMOS SALES COSTA': {'profissão': 'Sócio', 'salário': 1320.0}, 'YASMIN AMORIM CALEGARI': {'profissão': 'Sócio', 'salário': 1320.0}}
-2023-09-26 14:37:20,460 - Processado com sucesso
-2023-09-26 14:37:27,837 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48504311202307001.pdf
-2023-09-26 14:37:27,947 - Documento processado com sucesso.
-2023-09-26 14:37:27,947 - Acessando Makro
-2023-09-26 14:37:29,850 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43499502202307004 (4).pdf
-2023-09-26 14:37:45,418 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'ALEX SANDRO DA SILVA DOS SANTOS': {'profissão': 'Sócio', 'salário': 1320.0}, 'ANA CAROLINA MARINS CUNHA': {'profissão': 'Técnica em Enfermagem', 'salário': 1465.34}, 'IANARA CORDEIRO DA SILVA AGOSTINHO': {'profissão': 'Recepcionista', 'salário': 1368.06}, 'PLINIO PRIMO CAVALCANTI NETO': {'profissão': 'Sócio', 'salário': 1320.0}, 'TAIANE BUENO FERNANDES DA SILVA': {'profissão': 'Recepcionista', 'salário': 1368.06}}}
-2023-09-26 14:37:45,418 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'ALEX SANDRO DA SILVA DOS SANTOS': {'profissão': 'Sócio', 'salário': 1320.0}, 'ANA CAROLINA MARINS CUNHA': {'profissão': 'Técnica em Enfermagem', 'salário': 1465.34}, 'IANARA CORDEIRO DA SILVA AGOSTINHO': {'profissão': 'Recepcionista', 'salário': 1368.06}, 'PLINIO PRIMO CAVALCANTI NETO': {'profissão': 'Sócio', 'salário': 1320.0}, 'TAIANE BUENO FERNANDES DA SILVA': {'profissão': 'Recepcionista', 'salário': 1368.06}}}
-2023-09-26 14:37:45,418 - [{'nomeSocio': 'ALEX SANDRO DA SILVA DOS SANTOS', 'proLabore': 1320.0, 'anterior': 1320.0}, {'nomeSocio': 'PLINIO PRIMO CAVALCANTI NETO', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:37:45,435 - {'ALEX SANDRO DA SILVA DOS SANTOS': {'profissão': 'Sócio', 'salário': 1320.0}, 'ANA CAROLINA MARINS CUNHA': {'profissão': 'Técnica em Enfermagem', 'salário': 1465.34}, 'IANARA CORDEIRO DA SILVA AGOSTINHO': {'profissão': 'Recepcionista', 'salário': 1368.06}, 'PLINIO PRIMO CAVALCANTI NETO': {'profissão': 'Sócio', 'salário': 1320.0}, 'TAIANE BUENO FERNANDES DA SILVA': {'profissão': 'Recepcionista', 'salário': 1368.06}}
-2023-09-26 14:37:45,435 - Processado com sucesso
-2023-09-26 14:37:52,744 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202307006 (1).pdf
-2023-09-26 14:37:52,840 - Documento processado com sucesso.
-2023-09-26 14:37:52,840 - Acessando Makro
-2023-09-26 14:37:54,769 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-38251271202308002.pdf
-2023-09-26 14:38:10,207 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'MARCELA OLINDINA DA SILVA': {'profissão': 'FAXINEIRA', 'salário': 1900.0}, 'MICHAEL MEDEIROS COSTA': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:38:10,207 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'MARCELA OLINDINA DA SILVA': {'profissão': 'FAXINEIRA', 'salário': 1900.0}, 'MICHAEL MEDEIROS COSTA': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:38:10,207 - [{'nomeSocio': 'MICHAEL MEDEIROS COSTA', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:38:10,224 - {'MARCELA OLINDINA DA SILVA': {'profissão': 'FAXINEIRA', 'salário': 1900.0}, 'MICHAEL MEDEIROS COSTA': {'profissão': 'Sócio', 'salário': 1320.0}}
-2023-09-26 14:38:10,224 - Processado com sucesso
-2023-09-26 14:38:17,565 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43499502202307004 (4).pdf
-2023-09-26 14:38:17,658 - Documento processado com sucesso.
-2023-09-26 14:38:17,658 - Acessando Makro
-2023-09-26 14:38:19,581 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-44280711202308001.pdf
-2023-09-26 14:38:38,622 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'DANIELA APARECIDA RODRIGUES SOARES': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:38:38,622 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'DANIELA APARECIDA RODRIGUES SOARES': {'profissão': 'Sócio', 'salário': 1320.0}}}
-2023-09-26 14:38:38,636 - [{'nomeSocio': 'DANIELA APARECIDA RODRIGUES SOARES', 'proLabore': 1320.0, 'anterior': 1320.0}]
-2023-09-26 14:38:38,638 - {'DANIELA APARECIDA RODRIGUES SOARES': {'profissão': 'Sócio', 'salário': 1320.0}}
-2023-09-26 14:38:38,638 - Processado com sucesso
-2023-09-26 14:38:45,974 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-38251271202308002.pdf
-2023-09-26 14:38:46,068 - Documento processado com sucesso.
-2023-09-26 14:38:46,068 - Acessando Makro
-2023-09-26 14:38:47,995 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-40972356202308001.pdf
-2023-09-26 14:39:03,227 - {'execução': False, 'mensagem': FileNotFoundError(2, 'No such file or directory')}
-2023-09-26 14:39:03,227 - None
-2023-09-26 14:39:08,254 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-44280711202308001.pdf
-2023-09-26 14:39:08,349 - Documento processado com sucesso.
-2023-09-26 14:39:08,349 - Acessando Makro
-2023-09-26 14:39:29,079 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAROLINE MARETTO': {'profissão': 'Sócia', 'salário': 3816.0}}}
-2023-09-26 14:39:29,079 - {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': {'CAROLINE MARETTO': {'profissão': 'Sócia', 'salário': 3816.0}}}
-2023-09-26 14:39:29,080 - [{'nomeSocio': 'CAROLINE MARETTO', 'proLabore': 3816.0, 'anterior': 3816.0}]
-2023-09-26 14:39:29,087 - {'CAROLINE MARETTO': {'profissão': 'Sócia', 'salário': 3816.0}}
-2023-09-26 14:39:29,087 - Processado com sucesso
-2023-09-26 14:39:36,438 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-40972356202308001.pdf
+2023-10-03 17:54:25,712 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-03 17:54:30,234 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 17:54:30,316 - Documento processado com sucesso.
+2023-10-03 17:54:30,316 - Acessando Makro
+2023-10-03 17:55:16,575 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:06:09,453 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-03 18:06:18,626 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:06:18,727 - Documento processado com sucesso.
+2023-10-03 18:06:18,727 - Acessando Makro
+2023-10-03 18:07:33,230 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:18:38,753 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-03 18:18:43,832 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:18:43,954 - Documento processado com sucesso.
+2023-10-03 18:18:43,954 - Acessando Makro
+2023-10-03 18:19:29,714 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:20:18,974 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-03 18:20:22,851 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:20:22,940 - Documento processado com sucesso.
+2023-10-03 18:20:22,940 - Acessando Makro
+2023-10-03 18:21:49,899 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-03 18:22:07,945 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-03 18:22:08,082 - Documento processado com sucesso.
+2023-10-03 18:22:08,082 - Acessando Makro
+2023-10-03 18:23:12,693 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf

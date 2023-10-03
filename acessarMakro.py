@@ -32,6 +32,13 @@ def fazer_login_makro(driver, usuario_makro, senha_makro):
                 # logger.info("Aguardando modal para continuar")
                 time.sleep(1)
 
+        time.sleep(2)
+
+        # Acessar o diário
+        driver.get("https://www.makroweb.com.br/FormAgenda/Diario.aspx")
+
+        time.sleep(2)
+
         return True
 
     except Exception as e:

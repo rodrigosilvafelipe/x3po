@@ -7,7 +7,7 @@ import pyautogui
 
 def alterar_empresa(driver, razao_social):
     try:
-        input_filtro = esperar_elemento_id(driver, "EditFiltroRazSocCabecalho")
+        input_filtro = esperar_elemento_id(driver, "Conteudo_UserEmpresaPeriodoTrabalho_EditFiltroRazSocCabecalho")
         time.sleep(0.5)
         input_filtro.click()
         time.sleep(0.5)

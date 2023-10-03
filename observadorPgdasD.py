@@ -22,6 +22,7 @@ from functions.renomearRelatorioDadosEmpregados import renomearRelatorio
 from functions.extratorDadosRelacaoEmpregados import dadosRelacaoEmpregados
 from functions.processaDados import processaDados
 from functions.limparPasta import limparPasta
+from functions.alterarProLabore import alterar_prolabore
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -96,7 +97,14 @@ def acessar_makro(info):
             return
 
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
-        logging.info(socios['dados'])
+
+        for item in socios['dados']:
+            alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
+            # if item['proLabore'] != item['anterior']:
+            #     alterar_prolabore(item['nomeSocio'])
+            # else:
+            #     logging.info("Nao precisa alterar o pro-labore!")
+
         os.remove(arquivo)
         time.sleep(1)
         driver.quit()
