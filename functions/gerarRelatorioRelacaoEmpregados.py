@@ -26,6 +26,12 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
     #
     # ######################## Inicio - Gerar folha #########################
     try:
+
+        servico = esperar_elemento_id(driver, "ImgPessoal")
+        statusServico = servico.get_attribute("src")
+        if statusServico == "pessoal-cinza.svg":
+            return {"Execucao": False, "Mensagem": "Servico modulo pessoal nao aplicado."}
+
         vizualizar = esperar_elemento_id(driver, "Conteudo_GridRelatorios_BtnVisualizar_61")
         vizualizar.click()
 
@@ -37,8 +43,8 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
         exportarExcel.click()
 
         time.sleep(2)
-        return True
+        return {"Execucao": True, "Mensagem": "Processado com sucesso."}
     
     except Exception as e:
         
-        return False
+        return {"Execucao": False, "Mensagem": e}

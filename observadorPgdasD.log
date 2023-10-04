@@ -22,3 +22,106 @@
 2023-10-03 18:22:08,082 - Documento processado com sucesso.
 2023-10-03 18:22:08,082 - Acessando Makro
 2023-10-03 18:23:12,693 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:17:57,793 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:18:06,992 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:18:07,102 - Documento processado com sucesso.
+2023-10-04 16:18:07,102 - Acessando Makro
+2023-10-04 16:19:15,394 - 'mensagem'
+2023-10-04 16:19:15,425 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:24:19,738 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:24:24,104 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:24:24,199 - Documento processado com sucesso.
+2023-10-04 16:24:24,199 - Acessando Makro
+2023-10-04 16:25:28,652 - {'Execucao': False, 'Mensagem': TypeError('exceptions must derive from BaseException')}
+2023-10-04 16:25:28,652 - 'mensagem'
+2023-10-04 16:25:28,683 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:29:05,024 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:29:10,944 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:29:11,007 - Documento processado com sucesso.
+2023-10-04 16:29:11,007 - Acessando Makro
+2023-10-04 16:30:52,970 - {'Execucao': False, 'Mensagem': TypeError('exceptions must derive from BaseException')}
+2023-10-04 16:30:52,970 - 'mensagem'
+2023-10-04 16:30:53,002 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:32:46,696 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:32:51,402 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:32:51,481 - Documento processado com sucesso.
+2023-10-04 16:32:51,481 - Acessando Makro
+2023-10-04 16:34:36,251 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
+2023-10-04 16:34:36,252 - 'mensagem'
+2023-10-04 16:34:36,285 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:43:58,848 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:44:03,708 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:44:03,770 - Documento processado com sucesso.
+2023-10-04 16:44:03,770 - Acessando Makro
+2023-10-04 16:46:04,320 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
+2023-10-04 16:46:09,710 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:50:43,021 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:50:49,299 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:50:49,377 - Documento processado com sucesso.
+2023-10-04 16:50:49,377 - Acessando Makro
+2023-10-04 16:53:13,466 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:53:21,472 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:53:21,566 - Documento processado com sucesso.
+2023-10-04 16:53:21,566 - Acessando Makro
+2023-10-04 16:54:48,328 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
+2023-10-04 16:54:53,616 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:58:13,740 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 16:58:18,646 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 16:58:18,709 - Documento processado com sucesso.
+2023-10-04 16:58:18,709 - Acessando Makro
+2023-10-04 16:58:47,878 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
+2023-10-04 16:58:51,244 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:11:06,561 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:11:11,652 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:11:11,730 - Documento processado com sucesso.
+2023-10-04 17:11:11,730 - Acessando Makro
+2023-10-04 17:11:41,173 - {'Execucao': True, 'Mensagem': 7}
+2023-10-04 17:11:48,599 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:14:11,673 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:14:17,064 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:14:17,126 - Documento processado com sucesso.
+2023-10-04 17:14:17,126 - Acessando Makro
+2023-10-04 17:14:45,540 - {'Execucao': True, 'Mensagem': 7}
+2023-10-04 17:14:52,938 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:16:25,076 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:16:29,418 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:16:29,481 - Documento processado com sucesso.
+2023-10-04 17:16:29,481 - Acessando Makro
+2023-10-04 17:17:01,321 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
+2023-10-04 17:17:04,633 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:23:46,816 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:23:54,503 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:23:54,581 - Documento processado com sucesso.
+2023-10-04 17:23:54,581 - Acessando Makro
+2023-10-04 17:24:22,143 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
+2023-10-04 17:24:25,473 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:27:29,372 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:27:33,289 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:27:33,356 - Documento processado com sucesso.
+2023-10-04 17:27:33,356 - Acessando Makro
+2023-10-04 17:28:03,204 - {'Execucao': True, 'Mensagem': 'Operação interrompida.'}
+2023-10-04 17:28:10,587 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:31:28,848 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:31:33,890 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:31:33,969 - Documento processado com sucesso.
+2023-10-04 17:31:33,969 - Acessando Makro
+2023-10-04 17:32:01,791 - {'Execucao': False, 'Mensagem': TypeError('can only join an iterable')}
+2023-10-04 17:32:05,118 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:32:53,442 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:32:56,341 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:32:56,412 - Documento processado com sucesso.
+2023-10-04 17:32:56,412 - Acessando Makro
+2023-10-04 17:33:23,089 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nNa empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
+2023-10-04 17:33:32,966 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:36:37,128 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:36:42,334 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:36:42,397 - Documento processado com sucesso.
+2023-10-04 17:36:42,397 - Acessando Makro
+2023-10-04 17:37:07,197 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Na empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
+2023-10-04 17:37:16,464 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:38:36,423 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 17:38:40,900 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 17:38:40,962 - Documento processado com sucesso.
+2023-10-04 17:38:40,962 - Acessando Makro
+2023-10-04 17:39:06,499 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Na empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
+2023-10-04 17:39:15,668 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf

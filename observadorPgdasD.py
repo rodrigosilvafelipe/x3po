@@ -23,6 +23,8 @@ from functions.extratorDadosRelacaoEmpregados import dadosRelacaoEmpregados
 from functions.processaDados import processaDados
 from functions.limparPasta import limparPasta
 from functions.alterarProLabore import alterar_prolabore
+from functions.gerarFopag import gerar_fopag
+from functions.gerarPeriodicosESocial import gerar_periodicos
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -81,7 +83,15 @@ def acessar_makro(info):
         fazer_login_makro(driver, usuario, senha)
         periodoTrabalho(driver, info['periodoInicial'])
         alterar_empresa(driver, info['empresa'])
-        gerarRelatorioRelacaoEmpregados(driver, info)
+        exec = gerarRelatorioRelacaoEmpregados(driver, info)
+        if exec['Execucao'] == False:
+            configEmail = {
+                'assunto': "Processo de folha automatizada cancelado.",
+                'mensagem': f"Não foi possível gerar o relatório de relação de empregados na empresa {info['empresa']}\n{exec['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
         renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
@@ -97,15 +107,40 @@ def acessar_makro(info):
             return
 
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
-
-        for item in socios['dados']:
-            alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
-            # if item['proLabore'] != item['anterior']:
-            #     alterar_prolabore(item['nomeSocio'])
-            # else:
-            #     logging.info("Nao precisa alterar o pro-labore!")
-
         os.remove(arquivo)
+        for item in socios['dados']:
+            if item['proLabore'] != item['anterior']:
+                alterarProLabore = alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
+                if alterarProLabore["Execucao"] == False:
+                    configEmail = {
+                        'assunto': "Erro ao alterar pró-labore",
+                        'mensagem': f"Não foi possível alterar o pró-labore na empresa {info['empresa']}<br><br>{alterarProLabore['Mensagem']}"
+                    }
+                    enviarEmail(configEmail)
+                    driver.quit()
+                    return
+
+        gerarFolha = gerar_fopag(driver)
+
+        if gerarFolha["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao gerar folha de pagamento",
+                'mensagem': f"Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarFolha['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        
+        gerarPeriodicos = gerar_periodicos(driver)
+        if gerarPeriodicos["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao gerar periodicos do e-Social",
+                'mensagem': f"Não foi possível gerar os eventos periódicos do e-social na empresa {info['empresa']}<br><br>{gerarFolha['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
         time.sleep(1)
         driver.quit()
     except Exception as e:
