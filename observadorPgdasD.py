@@ -24,9 +24,12 @@ from functions.processaDados import processaDados
 from functions.limparPasta import limparPasta
 from functions.alterarProLabore import alterar_prolabore
 from functions.gerarFopag import gerar_fopag
+from functions.gerarReciboPagto import gerarReciboPagto
 from functions.gerarPeriodicosESocial import gerar_periodicos
 from functions.entregarEventosESocial import entregar_eventos
 from functions.encerrarPessoal import encerrar_pessoal
+from functions.darfReciboDctfWeb import baixarDarfRecibo
+from functions.moverArquivos import mover_arquivos
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -133,6 +136,15 @@ def acessar_makro(info):
             driver.quit()
             return
         
+        gerarRecibo = gerarReciboPagto(driver, info['empresa'])
+
+        if gerarRecibo["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao gerar recibo da folha de pagamento",
+                'mensagem': f"Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarRecibo['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+        
         gerarPeriodicos = gerar_periodicos(driver)
         if gerarPeriodicos["Execucao"] == False:
             configEmail = {
@@ -172,9 +184,24 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
+        
+        gerarDarf = baixarDarfRecibo(driver, info['empresa'])
+        if gerarDarf["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao gerar baixar e recibo DCTFWeb",
+                'mensagem': f"Não foi possível baixar os arquivos da DCTFWeb na empresa {info['empresa']}<br><br>{gerarDarf['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
 
-        time.sleep(1)
+        time.sleep(5)
         driver.quit()
+
+        caminho_origem = r"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada"
+        caminho_destino = r"Z:\\RPA\Simples Nacional\\PGDAS-D processado"
+        mover_arquivos(caminho_origem, caminho_destino)
+
     except Exception as e:
         logging.info(e)
 

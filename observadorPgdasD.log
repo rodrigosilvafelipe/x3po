@@ -193,3 +193,51 @@
 2023-10-05 00:41:00,972 - Documento processado com sucesso.
 2023-10-05 00:41:00,972 - Acessando Makro
 2023-10-05 00:43:06,467 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
+2023-10-05 17:55:27,626 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 17:55:48,063 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\AFREIRE SERVICOS MEDICOS LTDA - Guia do DAS Simples Nacional.pdf
+2023-10-05 17:55:48,078 - Erro ao tentar processar o documento
+2023-10-05 17:55:48,078 - cannot open broken document
+2023-10-05 17:55:48,078 - Enviando email com detalhaes.
+2023-10-05 17:55:52,410 - Email enviado
+2023-10-05 17:55:52,448 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\AFREIRE SERVICOS MEDICOS LTDA - Guia do DAS Simples Nacional.pdf
+2023-10-05 17:57:00,842 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
+2023-10-05 17:57:04,556 - Erro ao tentar processar o documento
+2023-10-05 17:57:04,556 - [Errno 13] Permission denied: 'Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\Acompanhamento tributário.xlsx'
+2023-10-05 17:57:04,556 - Enviando email com detalhaes.
+2023-10-05 17:57:07,741 - Email enviado
+2023-10-05 17:57:07,772 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
+2023-10-05 17:57:36,834 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
+2023-10-05 17:57:41,298 - Documento processado com sucesso.
+2023-10-05 17:57:41,298 - Acessando Makro
+2023-10-05 18:01:06,814 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
+2023-10-05 18:05:32,695 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 18:05:55,078 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
+2023-10-05 18:05:59,601 - Documento processado com sucesso.
+2023-10-05 18:05:59,601 - Acessando Makro
+2023-10-05 18:06:23,030 - 'dados'
+2023-10-05 18:06:25,177 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
+2023-10-05 18:07:38,468 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
+2023-10-05 18:07:42,791 - Documento processado com sucesso.
+2023-10-05 18:07:42,791 - Acessando Makro
+2023-10-05 18:08:04,456 - 'dados'
+2023-10-05 18:08:06,616 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
+2023-10-05 18:12:17,015 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 18:12:21,571 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
+2023-10-05 18:12:25,790 - Documento processado com sucesso.
+2023-10-05 18:12:25,790 - Acessando Makro
+2023-10-05 18:12:54,169 - 'dados'
+2023-10-05 18:12:56,348 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
+2023-10-05 18:16:38,478 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
+2023-10-05 18:16:42,816 - Documento processado com sucesso.
+2023-10-05 18:16:42,816 - Acessando Makro
+2023-10-05 18:17:03,351 - 'dados'
+2023-10-05 18:17:05,515 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
+2023-10-05 18:23:20,628 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ERIKA FARIA TINOCO. SERVICOS MEDICOS LTDA.pdf
+2023-10-05 18:23:25,078 - Documento processado com sucesso.
+2023-10-05 18:23:25,078 - Acessando Makro
+2023-10-05 18:25:32,425 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\ERIKA FARIA TINOCO. SERVICOS MEDICOS LTDA.pdf
+2023-10-05 18:39:02,564 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 18:40:37,513 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\FELIPE ROCHA NUTRICAO LTDA.pdf
+2023-10-05 18:40:41,748 - Documento processado com sucesso.
+2023-10-05 18:40:41,748 - Acessando Makro
+2023-10-05 18:43:15,310 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\FELIPE ROCHA NUTRICAO LTDA.pdf

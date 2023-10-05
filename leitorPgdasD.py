@@ -6,6 +6,7 @@ import math
 import pandas as pd
 from scraping.obterSalarioMinimo import obterSalarioMinimo
 from datetime import datetime
+from functions.inserirLinhaPlanilha import planilha
 
 def identificaDeclaracao(texto):
     # expressão regular para identificar se é uma declaração do simples nacional
@@ -419,19 +420,27 @@ def leitorPgdasD(path):
                     str(fopagMinima)
                 ]
 
+                def floatExcel(dado):
+                    dado = dado.replace(".", "")
+                    dado = dado.replace(",", ".")
+                    dado = float(dado)
+                    return dado
+
+                linha_planilha = [
+                    cnpj,
+                    nome_empresarial,
+                    aberturaCnpj,
+                    periodoApuracao[-10:],
+                    floatExcel(rpa[2]),
+                    floatExcel(rbt12[2]),
+                    floatExcel(simplesNacional),
+                    floatExcel(inssCpp),
+                    floatExcel(fopagTotal)
+                ]
+
                 # Especifique o nome do arquivo de texto
                 raiz_cnpj = ''.join(filter(str.isdigit, cnpj))
                 arquivo_texto = f"Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\{raiz_cnpj}.txt"
-                
-                # if os.path.isfile(arquivo_texto):
-                #     rbt13 = round(receita + rbt12Check, 2)
-                #     check = validadorReceitaBruta(arquivo_texto, periodoApuracao, rbt13)
-
-                #     if check[0] != round(rbt12Check, 2):
-                #         return ["Processo inadequado, diferença entre o RBT12 da base com o RBT12 da declaracao!"]
-                #     else:
-                #         fopagMinima = check[1] * 0.2801
-                #         linha_dado.append(fopagMinima)
 
                 # Texto que você deseja adicionar ao arquivo
                 texto_a_adicionar = '|'.join(linha_dado)
@@ -479,15 +488,11 @@ def leitorPgdasD(path):
                     # Salva o conteúdo atualizado de volta no arquivo
                     with open(arquivo_texto, 'w') as arquivo:
                         arquivo.writelines(linhas_ordenadas)
-            
+           
+        planilha(linha_planilha)
+
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
-        
-        # arquivoStartFopag = f"{cnpj}|{nome_empresarial}|{inicioMes}|{str(fopagMinima)}"
-        # nomeArquivoStartFopag = f"Z:\\RPA\\Folha Pró-Labore\\Start\\start-fopag-{raiz_cnpj}-{nome_empresarial}.txt"
-
-        # with open(nomeArquivoStartFopag, 'w') as arquivo:
-        #                 arquivo.write(f"{arquivoStartFopag}\n")
         
         return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
 
