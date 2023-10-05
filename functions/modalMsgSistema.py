@@ -41,9 +41,6 @@ def modalMsgSistema(driver):
                 return {"Execucao": True, "Mensagem": "Executado sem validacoes"}
 
         except Exception as e:
-            i += 1
-            if i == 5:
-                return {"Execucao": False, "Mensagem": e}
             pass
         
         time.sleep(1)

@@ -10,6 +10,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from functions.functions import esperar_elemento_id
+from functions.functions import esperar_elemento_xpath
 
 def gerarRelatorioRelacaoEmpregados(driver, opcoes):
 
@@ -29,8 +30,12 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
 
         servico = esperar_elemento_id(driver, "ImgPessoal")
         statusServico = servico.get_attribute("src")
+        statusServico = statusServico.split("/")
+        statusServico = statusServico[-1]
         if statusServico == "pessoal-cinza.svg":
             return {"Execucao": False, "Mensagem": "Servico modulo pessoal nao aplicado."}
+        if statusServico == "pessoal-verde.svg":
+            return {"Execucao": False, "Mensagem": "Servico modulo pessoal já foi encerrado."}
 
         vizualizar = esperar_elemento_id(driver, "Conteudo_GridRelatorios_BtnVisualizar_61")
         vizualizar.click()
@@ -43,6 +48,10 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
         exportarExcel.click()
 
         time.sleep(2)
+
+        clicarTela = esperar_elemento_xpath(driver, '//*[@id="update_panel_Master_Conteudo"]/div/div[1]/div[1]/div[1]/nav/ol/li')
+        clicarTela.click()
+
         return {"Execucao": True, "Mensagem": "Processado com sucesso."}
     
     except Exception as e:

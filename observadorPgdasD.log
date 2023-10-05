@@ -125,3 +125,71 @@
 2023-10-04 17:38:40,962 - Acessando Makro
 2023-10-04 17:39:06,499 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Na empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
 2023-10-04 17:39:15,668 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
+2023-10-04 18:12:23,975 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 18:13:08,290 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CBT SERVICOS MEDICOS LTDA.pdf
+2023-10-04 18:13:08,525 - Documento processado com sucesso.
+2023-10-04 18:13:08,525 - Acessando Makro
+2023-10-04 18:14:13,753 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CBT SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:01:32,551 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 23:02:28,989 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BEATRIZ MUGUET MEDICINA E SAUDE LTDA.pdf
+2023-10-04 23:02:29,165 - Documento processado com sucesso.
+2023-10-04 23:02:29,165 - Acessando Makro
+2023-10-04 23:03:33,229 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BEATRIZ MUGUET MEDICINA E SAUDE LTDA.pdf
+2023-10-04 23:08:41,453 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 23:08:58,493 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BEFF SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:08:58,655 - Documento processado com sucesso.
+2023-10-04 23:08:58,655 - Acessando Makro
+2023-10-04 23:09:46,238 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BEFF SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:10:50,914 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAIO KRETLI SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:10:51,112 - Documento processado com sucesso.
+2023-10-04 23:10:51,112 - Acessando Makro
+2023-10-04 23:11:37,807 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAIO KRETLI SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:12:42,708 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAROLINA PINHAO.pdf
+2023-10-04 23:12:42,897 - Documento processado com sucesso.
+2023-10-04 23:12:42,897 - Acessando Makro
+2023-10-04 23:13:44,174 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAROLINA PINHAO.pdf
+2023-10-04 23:15:05,369 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 23:15:21,955 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:15:22,092 - Documento processado com sucesso.
+2023-10-04 23:15:22,094 - Acessando Makro
+2023-10-04 23:17:27,101 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 23:17:30,939 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:17:31,067 - Documento processado com sucesso.
+2023-10-04 23:17:31,067 - Acessando Makro
+2023-10-04 23:18:13,851 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:33:05,352 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-04 23:33:21,908 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-04 23:33:22,097 - Documento processado com sucesso.
+2023-10-04 23:33:22,097 - Acessando Makro
+2023-10-04 23:34:16,751 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-05 00:17:10,962 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 00:17:31,968 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DIEGO CAMARA SERVICOS EM SAUDE LTDA.pdf
+2023-10-05 00:17:32,156 - Documento processado com sucesso.
+2023-10-05 00:17:32,156 - Acessando Makro
+2023-10-05 00:18:38,810 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DIEGO CAMARA SERVICOS EM SAUDE LTDA.pdf
+2023-10-05 00:28:38,895 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 00:28:58,973 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\GISELE HAIEK LTDA - Guia do DAS Simples Nacional.pdf
+2023-10-05 00:28:59,134 - Erro
+2023-10-05 00:28:59,134 - O documento fornecido não é uma declaração do Simples Nacional!
+2023-10-05 00:28:59,134 - Enviando email com detalhaes.
+2023-10-05 00:29:12,953 - Não foi possível enviar o e-mail.
+2023-10-05 00:29:12,953 - O arquivo PDF especificado nao existe.
+2023-10-05 00:29:45,282 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\H. AMORIM SERVICOS MEDICOS LTDA.pdf
+2023-10-05 00:29:45,449 - Documento processado com sucesso.
+2023-10-05 00:29:45,449 - Acessando Makro
+2023-10-05 00:34:58,327 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 00:35:09,421 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\HMR SERVICOS EM SAUDE LTDA.pdf
+2023-10-05 00:35:09,565 - Documento processado com sucesso.
+2023-10-05 00:35:09,565 - Acessando Makro
+2023-10-05 00:36:11,349 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\HMR SERVICOS EM SAUDE LTDA.pdf
+2023-10-05 00:40:01,156 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-05 00:40:20,562 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
+2023-10-05 00:40:20,593 - Erro ao tentar processar o documento
+2023-10-05 00:40:20,593 - cannot open broken document
+2023-10-05 00:40:20,593 - Enviando email com detalhaes.
+2023-10-05 00:40:35,609 - Email enviado
+2023-10-05 00:40:35,706 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
+2023-10-05 00:41:00,700 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
+2023-10-05 00:41:00,972 - Documento processado com sucesso.
+2023-10-05 00:41:00,972 - Acessando Makro
+2023-10-05 00:43:06,467 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf

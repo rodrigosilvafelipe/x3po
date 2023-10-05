@@ -25,6 +25,8 @@ from functions.limparPasta import limparPasta
 from functions.alterarProLabore import alterar_prolabore
 from functions.gerarFopag import gerar_fopag
 from functions.gerarPeriodicosESocial import gerar_periodicos
+from functions.entregarEventosESocial import entregar_eventos
+from functions.encerrarPessoal import encerrar_pessoal
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -135,7 +137,37 @@ def acessar_makro(info):
         if gerarPeriodicos["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar periodicos do e-Social",
-                'mensagem': f"Não foi possível gerar os eventos periódicos do e-social na empresa {info['empresa']}<br><br>{gerarFolha['Mensagem']}"
+                'mensagem': f"Não foi possível gerar os eventos periódicos do e-social na empresa {info['empresa']}<br><br>{gerarPeriodicos['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        
+        entregarEventos = entregar_eventos(driver)
+        if entregarEventos["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao entregar eventos do e-Social",
+                'mensagem': f"Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
+        encerrarPessoal = encerrar_pessoal(driver)
+        if encerrarPessoal["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao encerrar modulo pessoal",
+                'mensagem': f"Não foi possível encerrar o modulo pessoal na empresa {info['empresa']}<br><br>{encerrarPessoal['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        
+        entregarEventos = entregar_eventos(driver)
+        if entregarEventos["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao entregar eventos do e-Social",
+                'mensagem': f"Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()

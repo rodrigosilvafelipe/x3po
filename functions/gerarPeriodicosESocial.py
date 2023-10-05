@@ -17,7 +17,7 @@ def gerar_periodicos(driver):
         gerar_dados = esperar_elemento_id(driver, "Conteudo_BtnGerar")
         gerar_dados.click()
         time.sleep(1)
-        btnSim = esperar_elemento_xpath('//*[@id="id_alertWindow"]/div[3]/input[1]')
+        btnSim = esperar_elemento_xpath(driver, '//*[@id="id_alertWindow"]/div[3]/input[1]')
         btnSim.click()
         modal = modalMsgSistema(driver)
         if modal["Execucao"] == False:
