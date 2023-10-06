@@ -15,7 +15,7 @@ def alterar_empresa(driver, razao_social):
         time.sleep(1)
         pyautogui.press("enter")
         time.sleep(1)
-        return True
+        return {"Execucao": True, "Mensagem": "Processo concluído com sucesso!"}
 
     except Exception as e:
-        return False
+        return {"Execucao": False, "Mensagem": e}

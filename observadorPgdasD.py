@@ -31,6 +31,7 @@ from functions.encerrarPessoal import encerrar_pessoal
 from functions.darfReciboDctfWeb import baixarDarfRecibo
 from functions.moverArquivos import mover_arquivos
 from functions.emitirDas import emitirDas
+from functions.zohoSheet import outrosVinculos
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -70,6 +71,16 @@ class PDFHandler(FileSystemEventHandler):
             pdf_processing_thread.start()
 
 def acessar_makro(info):
+
+    validarOutrosVinculos = outrosVinculos(info['empresa'])
+    if validarOutrosVinculos['Execucao'] == False:
+        configEmail = {
+            'assunto': "Não foi possível pesquisar dados na planilha de outros vínculos",
+            'mensagem': f"Passo - Validar outros vínculos.<br><br>Não foi possível pesquisa dados na planilha de outros vínculos no processo da empresa {info['empresa']}<br><br>{validarOutrosVinculos['Erro']}"
+        }
+        enviarEmail(configEmail)
+        return
+    
     logging.info("Acessando Makro")
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_experimental_option("prefs", {
@@ -86,14 +97,38 @@ def acessar_makro(info):
     usuario = "X3PO"
     senha = "Escritax@X3PO"
     try:
-        fazer_login_makro(driver, usuario, senha)
-        periodoTrabalho(driver, info['periodoInicial'])
-        alterar_empresa(driver, info['empresa'])
+        login= fazer_login_makro(driver, usuario, senha)
+        if login['Execucao'] == False:
+            configEmail = {
+                'assunto': "Processo de folha automatizada cancelado.",
+                'mensagem': f"Passo - Fazer login no Makro.<br><br>Não foi possível fazer login no Makro no processo da empresa {info['empresa']}<br><br>{login['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        periodo = periodoTrabalho(driver, info['periodoInicial'])
+        if periodo['Execucao'] == False:
+            configEmail = {
+                'assunto': "Processo de folha automatizada cancelado.",
+                'mensagem': f"Passo - Alterar período de trabalho no Makro.<br><br>Não foi possível alterar o periodo de trabalho no Makro no processo da empresa {info['empresa']}<br><br>{periodo['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        alterarEmpresa = alterar_empresa(driver, info['empresa'])
+        if alterarEmpresa['Execucao'] == False:
+            configEmail = {
+                'assunto': "Processo de folha automatizada cancelado.",
+                'mensagem': f"Passo - Alterar empresa no Makro.<br><br>Não foi possível alterar a empresa no Makro no processo da empresa {info['empresa']}<br><br>{alterarEmpresa['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
         exec = gerarRelatorioRelacaoEmpregados(driver, info)
         if exec['Execucao'] == False:
             configEmail = {
                 'assunto': "Processo de folha automatizada cancelado.",
-                'mensagem': f"Não foi possível gerar o relatório de relação de empregados na empresa {info['empresa']}\n{exec['Mensagem']}"
+                'mensagem': f"Passo - Gerar ralatório relação de empregados.<br><br>Não foi possível gerar o relatório de relação de empregados na empresa {info['empresa']}<br><br>{exec['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -106,7 +141,7 @@ def acessar_makro(info):
             limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
             configEmail = {
                 'assunto': "Erro ao processar relação de empregados",
-                'mensagem': f"Não foi possível extrair os dados do relatório de relação de empregados na empresa {info['empresa']}\n{dados['mensagem']}"
+                'mensagem': f"Passo - Extrair dados do relatório de empregados.<br><br>Não foi possível extrair os dados do relatório de relação de empregados na empresa {info['empresa']}<br><br>{dados['mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -116,7 +151,7 @@ def acessar_makro(info):
         if socios['erro'] == True:
             configEmail = {
                         'assunto': "Não existem sócios com pró-labore",
-                        'mensagem': f"Não foram encontrados sócios com pró-labore na empresa {info['empresa']}"
+                        'mensagem': f"Passo - Processar dados da relação de empregados.<br><br>Não foram encontrados sócios com pró-labore na empresa {info['empresa']}"
                     }
             enviarEmail(configEmail)
             driver.quit()
@@ -124,13 +159,27 @@ def acessar_makro(info):
         
         os.remove(arquivo)
 
+        if validarOutrosVinculos['Mensagem'] == False:
+            
+            textoSociosEmail = "<br><br>Seguem os valores do pró-labore dos sócios:<br><br>"
+            for item in socios['dados']:
+                textoSociosEmail += f"{item['nomeSocio']}: {item['proLabore']}<br>"
+
+            configEmail = {
+                'assunto': f"Sócios possuem outros vínculos na empresa {info['empresa']}",
+                'mensagem': f"Passo - Validar empresa com sócios que possuem outros vínculos.<br><br>A empresa {info['empresa']} existe na planilha de controle de empresas que possuem sócios com outros vínculos, por isso, o processo foi interrompido.<br><br>Execute a tarefa de forma manual.{textoSociosEmail}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
         for item in socios['dados']:
             if item['proLabore'] != item['anterior']:
                 alterarProLabore = alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
                 if alterarProLabore["Execucao"] == False:
                     configEmail = {
                         'assunto': "Erro ao alterar pró-labore",
-                        'mensagem': f"Não foi possível alterar o pró-labore na empresa {info['empresa']}<br><br>{alterarProLabore['Mensagem']}"
+                        'mensagem': f"Passo - Alterar pró-labore.<br><br>Não foi possível alterar o pró-labore na empresa {info['empresa']}<br><br>{alterarProLabore['Mensagem']}"
                     }
                     enviarEmail(configEmail)
                     driver.quit()
@@ -141,7 +190,7 @@ def acessar_makro(info):
         if gerarFolha["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar folha de pagamento",
-                'mensagem': f"Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarFolha['Mensagem']}"
+                'mensagem': f"Passo - Gerar a folha de pagamento.<br><br>Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarFolha['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -152,7 +201,7 @@ def acessar_makro(info):
         if gerarRecibo["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar recibo da folha de pagamento",
-                'mensagem': f"Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarRecibo['Mensagem']}"
+                'mensagem': f"Passo - Gerar recibo de pagamento.<br><br>Não foi possível gerar a folha de pagamento na empresa {info['empresa']}<br><br>{gerarRecibo['Mensagem']}"
             }
             enviarEmail(configEmail)
         
@@ -160,7 +209,7 @@ def acessar_makro(info):
         if gerarPeriodicos["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar periodicos do e-Social",
-                'mensagem': f"Não foi possível gerar os eventos periódicos do e-social na empresa {info['empresa']}<br><br>{gerarPeriodicos['Mensagem']}"
+                'mensagem': f"Passo - Gerar periódicos do e-social.<br><br>Não foi possível gerar os eventos periódicos do e-social na empresa {info['empresa']}<br><br>{gerarPeriodicos['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -170,7 +219,7 @@ def acessar_makro(info):
         if entregarEventos["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao entregar eventos do e-Social",
-                'mensagem': f"Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
+                'mensagem': f"Passo - Entregar eventos periódicos do e-social.<br><br>Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -180,7 +229,7 @@ def acessar_makro(info):
         if encerrarPessoal["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao encerrar modulo pessoal",
-                'mensagem': f"Não foi possível encerrar o modulo pessoal na empresa {info['empresa']}<br><br>{encerrarPessoal['Mensagem']}"
+                'mensagem': f"Passo - Encerrar módulo pessoal.<br><br>Não foi possível encerrar o modulo pessoal na empresa {info['empresa']}<br><br>{encerrarPessoal['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -190,7 +239,7 @@ def acessar_makro(info):
         if entregarEventos["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao entregar eventos do e-Social",
-                'mensagem': f"Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
+                'mensagem': f"Passo - Entregar evento 1299 do e-Social.<br><br>Não foi possível entregar os eventos do e-social na empresa {info['empresa']}<br><br>{entregarEventos['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -200,7 +249,7 @@ def acessar_makro(info):
         if gerarDarf["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar e baixar darf ou recibo DCTFWeb",
-                'mensagem': f"Não foi possível baixar os arquivos da DCTFWeb na empresa {info['empresa']}<br><br>{gerarDarf['Mensagem']}"
+                'mensagem': f"Passo - Gerar arquivos da DCTFWeb.<br><br>Não foi possível baixar os arquivos da DCTFWeb na empresa {info['empresa']}<br><br>{gerarDarf['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -210,7 +259,7 @@ def acessar_makro(info):
         if das["Execucao"] == False:
             configEmail = {
                 'assunto': "Erro ao gerar e baixar o DAS",
-                'mensagem': f"Não foi possível baixar o DAS na empresa {info['empresa']}<br><br>{das['Mensagem']}"
+                'mensagem': f"Passo - Emitir o DAS.<br><br>Não foi possível baixar o DAS na empresa {info['empresa']}<br><br>{das['Mensagem']}"
             }
             enviarEmail(configEmail)
 

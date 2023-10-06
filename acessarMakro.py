@@ -39,8 +39,8 @@ def fazer_login_makro(driver, usuario_makro, senha_makro):
 
         time.sleep(2)
 
-        return True
+        return {"Execucao": True, "Mensagem": "Login efetuado com sucesso!"}
 
     except Exception as e:
         # logger.error(str(e))
-        return False
+        return {"Execucao": False, "Mensagem": e}

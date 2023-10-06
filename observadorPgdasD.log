@@ -1,269 +1,38 @@
-2023-10-03 17:54:25,712 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-03 17:54:30,234 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 17:54:30,316 - Documento processado com sucesso.
-2023-10-03 17:54:30,316 - Acessando Makro
-2023-10-03 17:55:16,575 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:06:09,453 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-03 18:06:18,626 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:06:18,727 - Documento processado com sucesso.
-2023-10-03 18:06:18,727 - Acessando Makro
-2023-10-03 18:07:33,230 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:18:38,753 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-03 18:18:43,832 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:18:43,954 - Documento processado com sucesso.
-2023-10-03 18:18:43,954 - Acessando Makro
-2023-10-03 18:19:29,714 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:20:18,974 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-03 18:20:22,851 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:20:22,940 - Documento processado com sucesso.
-2023-10-03 18:20:22,940 - Acessando Makro
-2023-10-03 18:21:49,899 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-03 18:22:07,945 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-03 18:22:08,082 - Documento processado com sucesso.
-2023-10-03 18:22:08,082 - Acessando Makro
-2023-10-03 18:23:12,693 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:17:57,793 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:18:06,992 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:18:07,102 - Documento processado com sucesso.
-2023-10-04 16:18:07,102 - Acessando Makro
-2023-10-04 16:19:15,394 - 'mensagem'
-2023-10-04 16:19:15,425 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:24:19,738 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:24:24,104 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:24:24,199 - Documento processado com sucesso.
-2023-10-04 16:24:24,199 - Acessando Makro
-2023-10-04 16:25:28,652 - {'Execucao': False, 'Mensagem': TypeError('exceptions must derive from BaseException')}
-2023-10-04 16:25:28,652 - 'mensagem'
-2023-10-04 16:25:28,683 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:29:05,024 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:29:10,944 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:29:11,007 - Documento processado com sucesso.
-2023-10-04 16:29:11,007 - Acessando Makro
-2023-10-04 16:30:52,970 - {'Execucao': False, 'Mensagem': TypeError('exceptions must derive from BaseException')}
-2023-10-04 16:30:52,970 - 'mensagem'
-2023-10-04 16:30:53,002 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:32:46,696 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:32:51,402 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:32:51,481 - Documento processado com sucesso.
-2023-10-04 16:32:51,481 - Acessando Makro
-2023-10-04 16:34:36,251 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
-2023-10-04 16:34:36,252 - 'mensagem'
-2023-10-04 16:34:36,285 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:43:58,848 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:44:03,708 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:44:03,770 - Documento processado com sucesso.
-2023-10-04 16:44:03,770 - Acessando Makro
-2023-10-04 16:46:04,320 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
-2023-10-04 16:46:09,710 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:50:43,021 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:50:49,299 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:50:49,377 - Documento processado com sucesso.
-2023-10-04 16:50:49,377 - Acessando Makro
-2023-10-04 16:53:13,466 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:53:21,472 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:53:21,566 - Documento processado com sucesso.
-2023-10-04 16:53:21,566 - Acessando Makro
-2023-10-04 16:54:48,328 - {'Execucao': False, 'Mensagem': Exception({'Execucao': False, 'Mensagem': 'Não foi possível manipular o modal após 60 segundos de espera.'})}
-2023-10-04 16:54:53,616 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:58:13,740 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 16:58:18,646 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 16:58:18,709 - Documento processado com sucesso.
-2023-10-04 16:58:18,709 - Acessando Makro
-2023-10-04 16:58:47,878 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
-2023-10-04 16:58:51,244 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:11:06,561 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:11:11,652 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:11:11,730 - Documento processado com sucesso.
-2023-10-04 17:11:11,730 - Acessando Makro
-2023-10-04 17:11:41,173 - {'Execucao': True, 'Mensagem': 7}
-2023-10-04 17:11:48,599 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:14:11,673 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:14:17,064 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:14:17,126 - Documento processado com sucesso.
-2023-10-04 17:14:17,126 - Acessando Makro
-2023-10-04 17:14:45,540 - {'Execucao': True, 'Mensagem': 7}
-2023-10-04 17:14:52,938 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:16:25,076 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:16:29,418 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:16:29,481 - Documento processado com sucesso.
-2023-10-04 17:16:29,481 - Acessando Makro
-2023-10-04 17:17:01,321 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
-2023-10-04 17:17:04,633 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:23:46,816 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:23:54,503 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:23:54,581 - Documento processado com sucesso.
-2023-10-04 17:23:54,581 - Acessando Makro
-2023-10-04 17:24:22,143 - {'Execucao': False, 'Mensagem': TypeError("'WebElement' object is not iterable")}
-2023-10-04 17:24:25,473 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:27:29,372 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:27:33,289 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:27:33,356 - Documento processado com sucesso.
-2023-10-04 17:27:33,356 - Acessando Makro
-2023-10-04 17:28:03,204 - {'Execucao': True, 'Mensagem': 'Operação interrompida.'}
-2023-10-04 17:28:10,587 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:31:28,848 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:31:33,890 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:31:33,969 - Documento processado com sucesso.
-2023-10-04 17:31:33,969 - Acessando Makro
-2023-10-04 17:32:01,791 - {'Execucao': False, 'Mensagem': TypeError('can only join an iterable')}
-2023-10-04 17:32:05,118 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:32:53,442 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:32:56,341 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:32:56,412 - Documento processado com sucesso.
-2023-10-04 17:32:56,412 - Acessando Makro
-2023-10-04 17:33:23,089 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nPara que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.\nNa empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
-2023-10-04 17:33:32,966 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:36:37,128 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:36:42,334 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:36:42,397 - Documento processado com sucesso.
-2023-10-04 17:36:42,397 - Acessando Makro
-2023-10-04 17:37:07,197 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br>Na empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
-2023-10-04 17:37:16,464 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:38:36,423 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 17:38:40,900 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 17:38:40,962 - Documento processado com sucesso.
-2023-10-04 17:38:40,962 - Acessando Makro
-2023-10-04 17:39:06,499 - {'Execucao': False, 'Mensagem': 'Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: TAIANE BUENO FERNANDES DA SILVA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: PLINIO PRIMO CAVALCANTI NETO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: IANARA CORDEIRO DA SILVA AGOSTINHO já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: Beatriz xavier do Carmo já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ANA CAROLINA MARINS CUNHA já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Para que a geração seja concluída é necessário verificar o Funcionário. Esta verificação é necessária pois a folha do período 01/09/2023 a 30/09/2023, do funcionário: ALEX SANDRO DA SILVA DOS SANTOS já foi gerada neste período* Tipo de Filtro: Todos os Funcionários. Caso seja necessário gerar novamente, antes elimine a folha existente.<br><br>Na empresa Matriz CENTRO MEDICO E DIAGNOSTICO POR IMAGEM XEREM LTDA, Departamento Pessoal, no período: 09/2023, já foi encerrado. Cancele este período, caso necessário.'}
-2023-10-04 17:39:15,668 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-48886984202309001.pdf
-2023-10-04 18:12:23,975 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 18:13:08,290 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CBT SERVICOS MEDICOS LTDA.pdf
-2023-10-04 18:13:08,525 - Documento processado com sucesso.
-2023-10-04 18:13:08,525 - Acessando Makro
-2023-10-04 18:14:13,753 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CBT SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:01:32,551 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 23:02:28,989 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BEATRIZ MUGUET MEDICINA E SAUDE LTDA.pdf
-2023-10-04 23:02:29,165 - Documento processado com sucesso.
-2023-10-04 23:02:29,165 - Acessando Makro
-2023-10-04 23:03:33,229 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BEATRIZ MUGUET MEDICINA E SAUDE LTDA.pdf
-2023-10-04 23:08:41,453 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 23:08:58,493 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BEFF SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:08:58,655 - Documento processado com sucesso.
-2023-10-04 23:08:58,655 - Acessando Makro
-2023-10-04 23:09:46,238 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BEFF SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:10:50,914 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAIO KRETLI SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:10:51,112 - Documento processado com sucesso.
-2023-10-04 23:10:51,112 - Acessando Makro
-2023-10-04 23:11:37,807 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAIO KRETLI SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:12:42,708 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAROLINA PINHAO.pdf
-2023-10-04 23:12:42,897 - Documento processado com sucesso.
-2023-10-04 23:12:42,897 - Acessando Makro
-2023-10-04 23:13:44,174 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAROLINA PINHAO.pdf
-2023-10-04 23:15:05,369 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 23:15:21,955 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:15:22,092 - Documento processado com sucesso.
-2023-10-04 23:15:22,094 - Acessando Makro
-2023-10-04 23:17:27,101 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 23:17:30,939 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:17:31,067 - Documento processado com sucesso.
-2023-10-04 23:17:31,067 - Acessando Makro
-2023-10-04 23:18:13,851 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:33:05,352 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-04 23:33:21,908 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
-2023-10-04 23:33:22,097 - Documento processado com sucesso.
-2023-10-04 23:33:22,097 - Acessando Makro
-2023-10-04 23:34:16,751 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
-2023-10-05 00:17:10,962 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 00:17:31,968 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DIEGO CAMARA SERVICOS EM SAUDE LTDA.pdf
-2023-10-05 00:17:32,156 - Documento processado com sucesso.
-2023-10-05 00:17:32,156 - Acessando Makro
-2023-10-05 00:18:38,810 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DIEGO CAMARA SERVICOS EM SAUDE LTDA.pdf
-2023-10-05 00:28:38,895 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 00:28:58,973 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\GISELE HAIEK LTDA - Guia do DAS Simples Nacional.pdf
-2023-10-05 00:28:59,134 - Erro
-2023-10-05 00:28:59,134 - O documento fornecido não é uma declaração do Simples Nacional!
-2023-10-05 00:28:59,134 - Enviando email com detalhaes.
-2023-10-05 00:29:12,953 - Não foi possível enviar o e-mail.
-2023-10-05 00:29:12,953 - O arquivo PDF especificado nao existe.
-2023-10-05 00:29:45,282 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\H. AMORIM SERVICOS MEDICOS LTDA.pdf
-2023-10-05 00:29:45,449 - Documento processado com sucesso.
-2023-10-05 00:29:45,449 - Acessando Makro
-2023-10-05 00:34:58,327 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 00:35:09,421 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\HMR SERVICOS EM SAUDE LTDA.pdf
-2023-10-05 00:35:09,565 - Documento processado com sucesso.
-2023-10-05 00:35:09,565 - Acessando Makro
-2023-10-05 00:36:11,349 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\HMR SERVICOS EM SAUDE LTDA.pdf
-2023-10-05 00:40:01,156 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 00:40:20,562 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
-2023-10-05 00:40:20,593 - Erro ao tentar processar o documento
-2023-10-05 00:40:20,593 - cannot open broken document
-2023-10-05 00:40:20,593 - Enviando email com detalhaes.
-2023-10-05 00:40:35,609 - Email enviado
-2023-10-05 00:40:35,706 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
-2023-10-05 00:41:00,700 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
-2023-10-05 00:41:00,972 - Documento processado com sucesso.
-2023-10-05 00:41:00,972 - Acessando Makro
-2023-10-05 00:43:06,467 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\ISABELLE MARQUES SERVICOS MEDICOS LTDA.pdf
-2023-10-05 17:55:27,626 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 17:55:48,063 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\AFREIRE SERVICOS MEDICOS LTDA - Guia do DAS Simples Nacional.pdf
-2023-10-05 17:55:48,078 - Erro ao tentar processar o documento
-2023-10-05 17:55:48,078 - cannot open broken document
-2023-10-05 17:55:48,078 - Enviando email com detalhaes.
-2023-10-05 17:55:52,410 - Email enviado
-2023-10-05 17:55:52,448 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\AFREIRE SERVICOS MEDICOS LTDA - Guia do DAS Simples Nacional.pdf
-2023-10-05 17:57:00,842 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
-2023-10-05 17:57:04,556 - Erro ao tentar processar o documento
-2023-10-05 17:57:04,556 - [Errno 13] Permission denied: 'Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\Acompanhamento tributário.xlsx'
-2023-10-05 17:57:04,556 - Enviando email com detalhaes.
-2023-10-05 17:57:07,741 - Email enviado
-2023-10-05 17:57:07,772 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
-2023-10-05 17:57:36,834 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
-2023-10-05 17:57:41,298 - Documento processado com sucesso.
-2023-10-05 17:57:41,298 - Acessando Makro
-2023-10-05 18:01:06,814 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAMILA CESAR SERVICOS MEDICOS LTDA.pdf
-2023-10-05 18:05:32,695 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 18:05:55,078 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
-2023-10-05 18:05:59,601 - Documento processado com sucesso.
-2023-10-05 18:05:59,601 - Acessando Makro
-2023-10-05 18:06:23,030 - 'dados'
-2023-10-05 18:06:25,177 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
-2023-10-05 18:07:38,468 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
-2023-10-05 18:07:42,791 - Documento processado com sucesso.
-2023-10-05 18:07:42,791 - Acessando Makro
-2023-10-05 18:08:04,456 - 'dados'
-2023-10-05 18:08:06,616 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
-2023-10-05 18:12:17,015 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 18:12:21,571 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
-2023-10-05 18:12:25,790 - Documento processado com sucesso.
-2023-10-05 18:12:25,790 - Acessando Makro
-2023-10-05 18:12:54,169 - 'dados'
-2023-10-05 18:12:56,348 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
-2023-10-05 18:16:38,478 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DML SAUDE LTDA.pdf
-2023-10-05 18:16:42,816 - Documento processado com sucesso.
-2023-10-05 18:16:42,816 - Acessando Makro
-2023-10-05 18:17:03,351 - 'dados'
-2023-10-05 18:17:05,515 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DML SAUDE LTDA.pdf
-2023-10-05 18:23:20,628 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\ERIKA FARIA TINOCO. SERVICOS MEDICOS LTDA.pdf
-2023-10-05 18:23:25,078 - Documento processado com sucesso.
-2023-10-05 18:23:25,078 - Acessando Makro
-2023-10-05 18:25:32,425 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\ERIKA FARIA TINOCO. SERVICOS MEDICOS LTDA.pdf
-2023-10-05 18:39:02,564 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-05 18:40:37,513 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\FELIPE ROCHA NUTRICAO LTDA.pdf
-2023-10-05 18:40:41,748 - Documento processado com sucesso.
-2023-10-05 18:40:41,748 - Acessando Makro
-2023-10-05 18:43:15,310 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\FELIPE ROCHA NUTRICAO LTDA.pdf
-2023-10-06 00:01:45,877 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 00:09:01,522 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 00:09:50,188 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BRITOS SERVICOS MEDICOS LTDA.pdf
-2023-10-06 00:10:01,149 - Documento processado com sucesso.
-2023-10-06 00:10:01,149 - Acessando Makro
-2023-10-06 00:10:40,277 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BRITOS SERVICOS MEDICOS LTDA.pdf
-2023-10-06 00:27:24,235 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 00:27:51,568 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BRITOS SERVICOS MEDICOS LTDA.pdf
-2023-10-06 00:28:02,370 - Documento processado com sucesso.
-2023-10-06 00:28:02,370 - Acessando Makro
-2023-10-06 00:30:57,136 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BRITOS SERVICOS MEDICOS LTDA.pdf
-2023-10-06 00:56:40,203 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 00:57:18,368 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\BRUNA ARAUJO SERVICO MEDICO LTDA.pdf
-2023-10-06 00:57:29,291 - Documento processado com sucesso.
-2023-10-06 00:57:29,291 - Acessando Makro
-2023-10-06 01:01:27,093 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\BRUNA ARAUJO SERVICO MEDICO LTDA.pdf
-2023-10-06 01:06:37,198 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 01:07:06,293 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CARDOSO FALEIRO SAUDE LTDA.pdf
-2023-10-06 01:07:17,022 - Documento processado com sucesso.
-2023-10-06 01:07:17,022 - Acessando Makro
-2023-10-06 01:10:14,450 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CARDOSO FALEIRO SAUDE LTDA.pdf
-2023-10-06 01:15:53,903 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
-2023-10-06 01:16:57,621 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DIANA BUCHSBAUM SERVICOS MEDICOS LTDA.pdf
-2023-10-06 01:17:08,292 - Documento processado com sucesso.
-2023-10-06 01:17:08,292 - Acessando Makro
-2023-10-06 01:21:08,467 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DIANA BUCHSBAUM SERVICOS MEDICOS LTDA.pdf
+2023-10-06 15:47:47,137 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F32B60>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:47:56,267 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F33D90>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:00,337 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F33E50>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:04,423 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F33E20>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:13,547 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F31810>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:17,611 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F33160>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:21,687 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C0E591ED0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:30,787 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C80704F10>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:34,846 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C80706410>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:38,887 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C80705030>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:48,027 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F08430>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:52,088 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F08340>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:48:56,137 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C8136CD60>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:49:05,287 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F33340>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:49:09,357 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F31840>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:49:13,417 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017C87F31AB0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/2e81d36de3a774a8bd69e152db9e1825/element
+2023-10-06 15:49:44,127 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-06 15:50:10,077 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\MBS SERVICOS MEDICOS LTDA.pdf
+2023-10-06 15:50:12,087 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\MARQUES MEDICAL LTDA.pdf
+2023-10-06 15:50:14,408 - Documento processado com sucesso.
+2023-10-06 15:50:15,746 - Acessando Makro
+2023-10-06 15:50:42,488 - -----------------
+2023-10-06 15:50:42,494 - {'Execucao': True, 'Mensagem': True}
+2023-10-06 15:52:12,887 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\MBS SERVICOS MEDICOS LTDA.pdf
+2023-10-06 15:52:21,487 - Documento processado com sucesso.
+2023-10-06 15:52:22,867 - Acessando Makro
+2023-10-06 16:38:33,468 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-06 16:38:43,616 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\MARQUES MEDICAL LTDA.pdf
+2023-10-06 16:38:47,958 - Documento processado com sucesso.
+2023-10-06 16:38:49,590 - Acessando Makro
+2023-10-06 16:39:10,856 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\MARQUES MEDICAL LTDA.pdf
+2023-10-06 16:40:19,536 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\MARQUES MEDICAL LTDA - Copia.pdf
+2023-10-06 16:40:27,998 - Documento processado com sucesso.
+2023-10-06 16:40:29,591 - Acessando Makro
+2023-10-06 16:40:53,611 - -----------------
+2023-10-06 16:40:53,611 - {'Execucao': True, 'Mensagem': False}
+2023-10-06 16:40:53,612 - Retornou False
+2023-10-06 16:41:03,087 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\MARQUES MEDICAL LTDA - Copia.pdf
