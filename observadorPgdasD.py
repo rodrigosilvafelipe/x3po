@@ -30,6 +30,7 @@ from functions.entregarEventosESocial import entregar_eventos
 from functions.encerrarPessoal import encerrar_pessoal
 from functions.darfReciboDctfWeb import baixarDarfRecibo
 from functions.moverArquivos import mover_arquivos
+from functions.emitirDas import emitirDas
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -112,7 +113,17 @@ def acessar_makro(info):
             return
 
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
+        if socios['erro'] == True:
+            configEmail = {
+                        'assunto': "Não existem sócios com pró-labore",
+                        'mensagem': f"Não foram encontrados sócios com pró-labore na empresa {info['empresa']}"
+                    }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        
         os.remove(arquivo)
+
         for item in socios['dados']:
             if item['proLabore'] != item['anterior']:
                 alterarProLabore = alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
@@ -188,12 +199,20 @@ def acessar_makro(info):
         gerarDarf = baixarDarfRecibo(driver, info['empresa'])
         if gerarDarf["Execucao"] == False:
             configEmail = {
-                'assunto': "Erro ao gerar baixar e recibo DCTFWeb",
+                'assunto': "Erro ao gerar e baixar darf ou recibo DCTFWeb",
                 'mensagem': f"Não foi possível baixar os arquivos da DCTFWeb na empresa {info['empresa']}<br><br>{gerarDarf['Mensagem']}"
             }
             enviarEmail(configEmail)
             driver.quit()
             return
+        
+        das = emitirDas(driver, info['empresa'])
+        if das["Execucao"] == False:
+            configEmail = {
+                'assunto': "Erro ao gerar e baixar o DAS",
+                'mensagem': f"Não foi possível baixar o DAS na empresa {info['empresa']}<br><br>{das['Mensagem']}"
+            }
+            enviarEmail(configEmail)
 
         time.sleep(5)
         driver.quit()
@@ -203,20 +222,19 @@ def acessar_makro(info):
         mover_arquivos(caminho_origem, caminho_destino)
 
     except Exception as e:
-        logging.info(e)
+        configEmail = {
+                'assunto': "Erro ao executar o processo",
+                'mensagem': f"Não foi possível concluir o processo na empresa {info['empresa']}<br><br>{e}"
+            }
+        enviarEmail(configEmail)
 
 def process_pdf(pdf_path):
-    # arquivoStart = "Z:\RPA\Simples Nacional\PGDAS-D a processar\processando.txt"
-    # for _ in range(3600):
-        
-    #     if os.path.isfile(arquivoStart):
-    #         time.sleep(1)
-    #     else:                    
-    #         with open(arquivoStart, 'w') as arquivo:
-    #             arquivo.write("Processando...")
-    #         break
     
     processo = leitorPgdasD(pdf_path)
+
+    if processo[0] != "Processado com sucesso":
+        time.sleep(10)
+        processo = leitorPgdasD(pdf_path)
 
     # Especifique o caminho completo do arquivo PDF que você deseja mover
     pdf_path = pdf_path

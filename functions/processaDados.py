@@ -10,7 +10,14 @@ def processaDados(empregados, fopagMinima, salarioMinimo):
 
         # Iterando sobre o dicionário de empregados
         for nome, info in empregados.items():
-            if info["profissão"] == "Sócio" or info["profissão"] == "Sócia":
+            if info["profissão"] == "Sócio" \
+            or info["profissão"] == "Socio" \
+            or info["profissão"] == "SÓCIO" \
+            or info["profissão"] == "SOCIO" \
+            or info["profissão"] == "Sócia" \
+            or info["profissão"] == "Socia" \
+            or info["profissão"] == "SÓCIA" \
+            or info["profissão"] == "SOCIA":
                 proLabore += info["salário"]
                 qtdSocios += 1.0
                 listaSocios.append(nome)
@@ -32,6 +39,9 @@ def processaDados(empregados, fopagMinima, salarioMinimo):
         for socio in listaSocios:
             # Criando um dicionário para cada sócio e adicionando à lista
             listaObjetosSocios.append({"nomeSocio": socio, "proLabore": proLaboreSocio, "anterior": empregados[socio]['salário']})
+
+        if len(listaObjetosSocios) < 1:
+            return {'dados': listaObjetosSocios, 'erro': True}
 
         return {'dados': listaObjetosSocios, 'erro': False}
     

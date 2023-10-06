@@ -95,7 +95,7 @@ def baixarDarfRecibo(driver, razao_social):
         mover_id(driver, 'Conteudo_GridImpostosDCTFWebPai_BtnSituacao_0')
 
         if pularGerarRecibo == False:
-            btn_imprimirRecibo = esperar_elemento_id(driver, 'Conteudo_GridImpostosDCTFWebPai_SpBtnExibirArquivoArrecadacao_0')
+            btn_imprimirRecibo = esperar_elemento_id(driver, 'Conteudo_GridImpostosDCTFWebPai_BtnExibirArquivoRecibo_0')
             btn_imprimirRecibo.click()
             time.sleep(1)
             embed_salvarRecibo = esperar_elemento_id(driver,'EmbedArquivo')
