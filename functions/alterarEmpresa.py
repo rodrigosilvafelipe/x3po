@@ -13,7 +13,8 @@ def alterar_empresa(driver, razao_social):
         time.sleep(0.5)
         input_filtro.send_keys(razao_social)
         time.sleep(1)
-        pyautogui.press("enter")
+        input_filtro.send_keys(Keys.ENTER)
+        # pyautogui.press("enter")
         time.sleep(1)
         return {"Execucao": True, "Mensagem": "Processo concluído com sucesso!"}
 

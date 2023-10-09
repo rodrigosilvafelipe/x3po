@@ -494,7 +494,7 @@ def leitorPgdasD(path):
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
         
-        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
+        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'periodoInicial': inicioMes, 'valorSimples': floatExcel(simplesNacional)}]
 
     except Exception as e:
         print(e)

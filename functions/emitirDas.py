@@ -69,17 +69,18 @@ def emitirDas(driver, razao_social):
                     time.sleep(1)
                     confirmar = esperar_elemento_xpath(driver, '//*[@id="id_alertWindow"]/div[3]/input[1]')
                     confirmar.click()
-
-                embed_salvarDarf = esperar_elemento_id(driver,'EmbedImpostos')
-                link = embed_salvarDarf.get_attribute("src")
                 
                 for _ in range(60):
-                    if link:
-                        pdf = f"Das-Simples-Nacional-{razao_social}"
-                        baixar_pdf(driver, link, pdf, 1)
-                        break
-                    else:
+                    try:
+                        embed_salvarDarf = esperar_elemento_id(driver,'EmbedImpostos')
+                        link = embed_salvarDarf.get_attribute("src")
+                        if link:
+                            pdf = f"Das-Simples-Nacional-{razao_social}"
+                            baixar_pdf(driver, link, pdf, 1)
+                            break
+                    except Exception as e:
                         time.sleep(1)
+                        pass
 
                 # btn_fecharSalvarDarf = esperar_elemento_xpath(driver,'//*[@id="modal_Master_Custom"]/div/div/div[1]/div/div/div[2]/button')
                 # btn_fecharSalvarDarf.click()

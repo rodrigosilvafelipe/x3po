@@ -36,3 +36,43 @@
 2023-10-06 16:40:53,611 - {'Execucao': True, 'Mensagem': False}
 2023-10-06 16:40:53,612 - Retornou False
 2023-10-06 16:41:03,087 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\MARQUES MEDICAL LTDA - Copia.pdf
+2023-10-09 13:36:27,480 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-09 13:36:59,224 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAROLINA PINHAO.pdf
+2023-10-09 13:37:03,669 - Documento processado com sucesso.
+2023-10-09 13:37:05,286 - Acessando Makro
+2023-10-09 13:37:47,741 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAROLINA PINHAO.pdf
+2023-10-09 13:40:22,935 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAROLINA PINHAO.pdf
+2023-10-09 13:40:27,375 - Documento processado com sucesso.
+2023-10-09 13:40:28,817 - Acessando Makro
+2023-10-09 13:42:46,808 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CAROLINA PINHAO.pdf
+2023-10-09 13:44:20,340 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANA FREITAS NUTRICAO LTDA.pdf
+2023-10-09 13:44:22,347 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:44:30,104 - Documento processado com sucesso.
+2023-10-09 13:44:31,848 - Acessando Makro
+2023-10-09 13:44:52,926 - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013951DF5A80>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/98b728b66aa9310992d56e185704f19b
+2023-10-09 13:44:56,962 - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013951DF5DE0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/98b728b66aa9310992d56e185704f19b
+2023-10-09 13:45:01,014 - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013951DF5EA0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/98b728b66aa9310992d56e185704f19b
+2023-10-09 13:45:09,144 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANA FREITAS NUTRICAO LTDA.pdf
+2023-10-09 13:50:44,521 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-09 13:50:52,624 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CAROLINE BELING SERVIÇOS MÉDICOS LTDA.pdf
+2023-10-09 13:50:54,627 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\CBT SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:51:03,864 - Erro ao tentar processar o documento
+2023-10-09 13:51:03,864 - cannot open broken document
+2023-10-09 13:51:03,864 - Enviando email com detalhaes.
+2023-10-09 13:51:07,889 - Email enviado
+2023-10-09 13:51:07,904 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado com erro\CAROLINE BELING SERVIÇOS MÉDICOS LTDA.pdf
+2023-10-09 13:51:09,935 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANA FREITAS NUTRICAO LTDA.pdf
+2023-10-09 13:51:12,376 - Documento processado com sucesso.
+2023-10-09 13:51:13,968 - Acessando Makro
+2023-10-09 13:51:52,597 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\CBT SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:51:54,602 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:52:01,170 - Documento processado com sucesso.
+2023-10-09 13:52:02,623 - Acessando Makro
+2023-10-09 13:54:49,699 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANA FREITAS NUTRICAO LTDA.pdf
+2023-10-09 13:54:51,714 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\DANIEL SAMPAIO SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:54:54,187 - Documento processado com sucesso.
+2023-10-09 13:54:55,615 - Acessando Makro
+2023-10-09 13:55:33,319 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DAIANE TEIXEIRA SERVICOS MEDICOS LTDA.pdf
+2023-10-09 13:55:38,108 - Documento processado com sucesso.
+2023-10-09 13:55:39,484 - Acessando Makro
+2023-10-09 13:57:55,972 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DANIEL SAMPAIO SERVICOS MEDICOS LTDA.pdf
