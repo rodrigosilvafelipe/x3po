@@ -41,7 +41,7 @@ def alterar_prolabore(driver, socio, data, proLabore):
         motivo = esperar_elemento_id(driver, "Conteudo_EditMotivoAumento")
         selectMotivo = Select(motivo)
         selectMotivo.select_by_visible_text("Espontâneo")
-        selectMotivo.send_keys(Keys.ENTER)
+        # selectMotivo.send_keys(Keys.ENTER)
         # pyautogui.press("enter")
         salvar = esperar_elemento_id(driver, "Conteudo_BotoesRodape1_BtnSalvar")
         salvar.click()
