@@ -256,13 +256,7 @@ def acessar_makro(info):
             return
         
         if info['valorSimples'] > 0:
-            das = emitirDas(driver, info['empresa'])
-            if das["Execucao"] == False:
-                configEmail = {
-                    'assunto': "Erro ao gerar e baixar o DAS",
-                    'mensagem': f"Passo - Emitir o DAS.<br><br>Não foi possível baixar o DAS na empresa {info['empresa']}<br><br>{das['Mensagem']}"
-                }
-                enviarEmail(configEmail)
+            emitirDas(driver, info['empresa'])
 
         time.sleep(5)
         driver.quit()
