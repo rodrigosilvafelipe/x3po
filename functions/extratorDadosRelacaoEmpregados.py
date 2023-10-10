@@ -1,6 +1,7 @@
 import openpyxl
+import re
 
-def dadosRelacaoEmpregados(xlsx_path):
+def dadosRelacaoEmpregados(xlsx_path, cnpj):
     try:
         # Abrir o arquivo Excel
         workbook = openpyxl.load_workbook(xlsx_path)
@@ -8,6 +9,20 @@ def dadosRelacaoEmpregados(xlsx_path):
         # Selecionar a planilha ativa (ou você pode selecionar uma planilha específica pelo nome)
         sheet = workbook.active
 
+        # Extrair o CNPJ da célula B7
+        cnpj_celula = sheet['B7'].value
+        
+        # Usar expressão regular para extrair o CNPJ do texto
+        cnpj_extraido = re.search(r'\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}', cnpj_celula)
+        if cnpj_extraido:
+            cnpj_extraido = cnpj_extraido.group()
+        else:
+            return {'execução': False, 'mensagem': 'CNPJ não encontrado no relatório'}
+        
+        # Comparar o CNPJ extraído com o CNPJ fornecido
+        if cnpj_extraido != cnpj:
+            return {'execução': False, 'mensagem': 'Relatório Relação de Empregados não pertence à empresa atual'}
+        
         # Inicializar o dicionário para armazenar os dados extraídos
         empregados_dict = {}
 
@@ -34,5 +49,4 @@ def dadosRelacaoEmpregados(xlsx_path):
         return {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': empregados_dict}
     
     except Exception as e:
-        
-        return {'execução': False, 'mensagem': e}
+        return {'execução': False, 'mensagem': str(e)}

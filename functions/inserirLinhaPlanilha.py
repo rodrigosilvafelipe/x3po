@@ -51,3 +51,36 @@ def planilha(dados):
     workbook.save(planilha)
 
     return True
+
+def atualizar_valor_fopag(cnpj, competencia, novo_valor):
+    planilha = 'Z:\RPA\Simples Nacional\BD_Simples_Nacional\Acompanhamento tributário.xlsx'
+
+    # Carregar a planilha existente
+    workbook = openpyxl.load_workbook(planilha)
+
+    # Selecionar a aba 'bd'
+    sheet = workbook['bd']
+
+    # Flag para verificar se a linha foi atualizada
+    linha_atualizada = False
+
+    # Iterar sobre as linhas existentes na planilha
+    for row_num in range(2, sheet.max_row + 1):
+        # Verificar se o CNPJ e a competência correspondem
+        if sheet.cell(row=row_num, column=1).value == cnpj and \
+        sheet.cell(row=row_num, column=4).value == competencia:
+            # Atualizar a coluna "valor_fopag"
+            sheet.cell(row=row_num, column=10).value = novo_valor
+            sheet.cell(row=row_num, column=10)._style = sheet.cell(row=row_num-1, column=10)._style
+            linha_atualizada = True
+            break
+
+    # Se a linha não foi atualizada, você pode optar por adicionar uma nova linha ou retornar um erro
+    if not linha_atualizada:
+        print(f"Não foi possível encontrar uma linha com o CNPJ {cnpj} e a competência {competencia}.")
+        return False
+
+    # Salvar a planilha
+    workbook.save(planilha)
+
+    return True

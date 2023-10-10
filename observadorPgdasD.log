@@ -76,3 +76,80 @@
 2023-10-09 13:55:38,108 - Documento processado com sucesso.
 2023-10-09 13:55:39,484 - Acessando Makro
 2023-10-09 13:57:55,972 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\DANIEL SAMPAIO SERVICOS MEDICOS LTDA.pdf
+2023-10-10 14:06:30,274 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 14:07:21,644 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-52010059202309001.pdf
+2023-10-10 14:07:31,664 - Erro ao tentar processar o documento
+2023-10-10 14:07:31,664 - no such file: 'Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-52010059202309001.pdf'
+2023-10-10 14:07:31,664 - Enviando email com detalhaes.
+2023-10-10 14:07:33,664 - Não foi possível enviar o e-mail.
+2023-10-10 14:07:33,664 - O arquivo PDF especificado nao existe.
+2023-10-10 14:15:00,194 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 14:15:13,265 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-52010059202309001.pdf
+2023-10-10 14:15:21,315 - Documento processado com sucesso.
+2023-10-10 14:15:22,974 - Acessando Makro
+2023-10-10 14:20:10,074 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 14:20:41,733 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-52010059202309001 (1).pdf
+2023-10-10 14:20:46,674 - Documento processado com sucesso.
+2023-10-10 14:20:48,204 - Acessando Makro
+2023-10-10 14:21:33,904 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-52010059202309001 (1).pdf
+2023-10-10 14:23:09,378 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-51195606202309001.pdf
+2023-10-10 14:23:16,639 - Documento processado com sucesso.
+2023-10-10 14:23:18,186 - Acessando Makro
+2023-10-10 14:23:41,395 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-51195606202309001.pdf
+2023-10-10 14:26:00,516 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-47344950202309001.pdf
+2023-10-10 14:26:06,773 - Documento processado com sucesso.
+2023-10-10 14:26:08,085 - Acessando Makro
+2023-10-10 14:26:54,374 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-47344950202309001.pdf
+2023-10-10 15:55:24,200 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 15:56:30,621 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 15:56:38,786 - Documento processado com sucesso.
+2023-10-10 15:56:40,351 - Acessando Makro
+2023-10-10 15:57:14,820 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 15:57:47,755 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 15:57:52,586 - Documento processado com sucesso.
+2023-10-10 15:57:54,046 - Acessando Makro
+2023-10-10 15:58:24,056 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 15:59:45,568 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 15:59:49,615 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 15:59:54,266 - Documento processado com sucesso.
+2023-10-10 15:59:55,630 - Acessando Makro
+2023-10-10 16:00:46,259 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:02:28,626 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 16:02:54,014 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:02:59,305 - Documento processado com sucesso.
+2023-10-10 16:03:00,639 - Acessando Makro
+2023-10-10 16:03:50,046 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:04:15,055 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 16:04:37,424 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:04:42,149 - Documento processado com sucesso.
+2023-10-10 16:04:43,406 - Acessando Makro
+2023-10-10 16:05:06,506 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:06:44,185 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001.pdf
+2023-10-10 16:06:52,801 - Documento processado com sucesso.
+2023-10-10 16:06:54,156 - Acessando Makro
+2023-10-10 16:10:28,678 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 16:10:54,434 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (1).pdf
+2023-10-10 16:10:59,242 - Documento processado com sucesso.
+2023-10-10 16:11:00,652 - Acessando Makro
+2023-10-10 16:13:33,953 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 16:13:53,135 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 16:13:57,865 - Documento processado com sucesso.
+2023-10-10 16:13:59,196 - Acessando Makro
+2023-10-10 16:14:59,516 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 16:18:58,484 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 16:19:03,419 - Documento processado com sucesso.
+2023-10-10 16:19:07,955 - Acessando Makro
+2023-10-10 16:20:08,967 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 16:26:21,648 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 16:26:26,485 - Documento processado com sucesso.
+2023-10-10 16:26:27,905 - Acessando Makro
+2023-10-10 16:28:46,645 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 17:28:22,152 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 17:28:53,112 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (2).pdf
+2023-10-10 17:28:58,094 - Documento processado com sucesso.
+2023-10-10 17:28:59,524 - Acessando Makro
+2023-10-10 17:30:03,537 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-10-10 17:30:09,580 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-43942773202309001 (3).pdf
+2023-10-10 17:30:14,464 - Documento processado com sucesso.
+2023-10-10 17:30:15,765 - Acessando Makro
+2023-10-10 17:32:32,827 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-43942773202309001 (3).pdf

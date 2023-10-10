@@ -32,6 +32,8 @@ from functions.darfReciboDctfWeb import baixarDarfRecibo
 from functions.moverArquivos import mover_arquivos
 from functions.emitirDas import emitirDas
 from functions.zohoSheet import outrosVinculos
+from functions.revisarVlrFopag import obterValor
+from functions.inserirLinhaPlanilha import atualizar_valor_fopag
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -97,6 +99,7 @@ def acessar_makro(info):
     usuario = "X3PO"
     senha = "Escritax@X3PO"
     try:
+        limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
         login= fazer_login_makro(driver, usuario, senha)
         if login['Execucao'] == False:
             configEmail = {
@@ -136,7 +139,7 @@ def acessar_makro(info):
         renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
-        dados = dadosRelacaoEmpregados(arquivo)
+        dados = dadosRelacaoEmpregados(arquivo, info['cnpj'])
         if dados['execução'] == False:
             limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
             configEmail = {
@@ -196,6 +199,25 @@ def acessar_makro(info):
             driver.quit()
             return
         
+        revisarValor = obterValor(driver)
+        if revisarValor['Execucao'] == False:
+            configEmail = {
+                'assunto': "Erro ao validar valor da folha de pagamento",
+                'mensagem': f"Passo - Validar o valor da folha de pagamento.<br><br>Não foi possível validar o valor da folha de pagamento na empresa {info['empresa']}<br><br>{revisarValor['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+        
+        if not abs(revisarValor['Mensagem'] - info['valorFopag']) <= 2.0:
+            configEmail = {
+                'assunto': "O valor da folha de pagamento pode estar incorreto",
+                'mensagem': f"Passo - Validar o valor da folha de pagamento.<br><br>Diferença no valor da folha de pagamento na empresa {info['empresa']} maior que 2<br><br>Valor no Makro: {revisarValor['Mensagem']}<br><br>Valor esperado: {info['valorFopag']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
         gerarRecibo = gerarReciboPagto(driver, info['empresa'])
 
         if gerarRecibo["Execucao"] == False:
@@ -257,6 +279,8 @@ def acessar_makro(info):
         
         if info['valorSimples'] > 0:
             emitirDas(driver, info['empresa'])
+
+        atualizar_valor_fopag(info['cnpj'], info['periodoFinal'], revisarValor['Mensagem'])
 
         time.sleep(5)
         driver.quit()

@@ -31,7 +31,7 @@ def modalMsgSistema(driver):
                     div2 = div1.find_element(By.CLASS_NAME, 'div-texto')
                     msgValidacao = div2.find_elements(By.TAG_NAME, 'p')
                     isValidacao = msgValidacao[-1].text
-                    if isValidacao == "Operação interrompida.":
+                    if isValidacao == "Operação interrompida." or isValidacao == "Operação interrompida!":
                         texto = div2.find_element(By.TAG_NAME, 'p').text
                         validacoes.append(texto)
                         validacao = True

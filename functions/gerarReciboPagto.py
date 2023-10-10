@@ -18,9 +18,11 @@ def gerarReciboPagto(driver, razao_social):
     # ######################## Inicio - Acessar página de relatórios #########################
 
     driver.get("https://www.makroweb.com.br/Relatorios.aspx?PkModulos=525")
-
-    seletor = ".toast-place-right"  # Exemplo de seletor de classe
-    driver.execute_script(f"document.querySelector('{seletor}').innerHTML = '';")
+    try:
+        seletor = ".toast-place-right"  # Exemplo de seletor de classe
+        driver.execute_script(f"document.querySelector('{seletor}').innerHTML = '';")
+    except Exception as e:
+        pass
 
     # ######################## Fim - Acessar página de relatórios #########################
     #

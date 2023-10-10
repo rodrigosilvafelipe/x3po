@@ -14,8 +14,8 @@ def encerrar_pessoal(driver):
 
     try:
         btnValidar = esperar_elemento_id(driver, "Conteudo_BtnValidarDepartamento")
-        btnValidar.click() 
-        
+        btnValidar.click()
+        time.sleep(2)
         modal = modalMsgSistema(driver)
         
         if modal["Execucao"] == False:
@@ -28,7 +28,7 @@ def encerrar_pessoal(driver):
 
         btnConfirmar = esperar_elemento_xpath(driver, '//*[@id="id_alertWindow"]/div[3]/input[1]')
         btnConfirmar.click()
-
+        time.sleep(2)
         modal = modalMsgSistema(driver)
         
         if modal["Execucao"] == False:
