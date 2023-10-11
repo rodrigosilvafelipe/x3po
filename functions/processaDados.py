@@ -1,3 +1,4 @@
+import math
 def processaDados(empregados, fopagMinima, salarioMinimo):
     
     try:
@@ -34,6 +35,8 @@ def processaDados(empregados, fopagMinima, salarioMinimo):
             proLaboreSocio = salarioMinimo
         else:
             proLaboreSocio = novoProLabore / qtdSocios
+
+        proLaboreSocio = math.ceil(proLaboreSocio)
 
         # Iterando sobre a lista de sócios
         for socio in listaSocios:

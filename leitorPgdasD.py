@@ -385,10 +385,10 @@ def leitorPgdasD(path):
                 salarioMinimoPeriodo = float(salarioMinimoPeriodo)
                 
                 if fopagMinima < salarioMinimoPeriodo:
-                    fopagMinima = salarioMinimoPeriodo
+                    fopagMinima = int(salarioMinimoPeriodo)
                 
                 if sujeitoFatorR == "Não":
-                    fopagMinima = salarioMinimoPeriodo
+                    fopagMinima = int(salarioMinimoPeriodo)
 
                 linha_dado = [
                     "PGDASD",
