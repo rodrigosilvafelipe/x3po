@@ -40,7 +40,7 @@ while True:
         mensagem_erro = "--------------------\n" + "Erro: " + str(e) + "\n"
         
         # Adiciona a mensagem de erro ao arquivo log.txt
-        with open("log.txt", "a") as log_file:
+        with open("Z:\RPA\Simples Nacional\PGDAS-D a processar\log.txt", "w") as log_file:
             log_file.write(mensagem_erro)
         # Espera 10 segundos antes de tentar novamente
         time.sleep(10)
