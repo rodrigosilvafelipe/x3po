@@ -99,7 +99,7 @@ def acessar_makro(info):
     usuario = "X3PO"
     senha = "Escritax@X3PO"
     try:
-        limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
+        limparPasta("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada")
         login= fazer_login_makro(driver, usuario, senha)
         if login['Execucao'] == False:
             configEmail = {
