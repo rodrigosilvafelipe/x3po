@@ -1,5 +1,7 @@
 import os
 import shutil
+import datetime
+import time
 
 def limparPasta(caminho_da_pasta):
     # Lista todos os arquivos e subpastas no caminho especificado
@@ -16,6 +18,20 @@ def limparPasta(caminho_da_pasta):
                 os.remove(caminho_completo)
 
         except Exception as e:
-            return e
+            # Obtem a data e hora atuais e formata conforme desejado
+            data_hora_atual = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+            
+            # Formata a mensagem de erro
+            mensagem_erro = (
+                "--------------------\n"
+                + "Data e Hora: " + data_hora_atual + "\n"
+                + "Erro: " + str(e) + "\n"
+            )
+            
+            # Adiciona a mensagem de erro ao arquivo log.txt
+            with open("Z:\\RPA\\Simples Nacional\\log-mover-arquivos.txt", "a") as log_file:
+                log_file.write(mensagem_erro)
+            
+            pass
         
     return
