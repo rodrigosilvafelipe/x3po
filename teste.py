@@ -24,6 +24,20 @@ def identificaDeclaracao(texto):
 
     except Exception as e:
             return False
+    
+def verificaRetencaoIss(pdf_text):
+    # O texto que você deseja encontrar
+    texto_a_encontrar = "Prestação.de.Serviços,.exceto.para.o.exterior.-.Sujeitos.ao.fator.“r”,.com.retenção/substituição.tributária.de.ISS"
+
+    # Use a função re.search para encontrar o texto no pdf_text
+    match = re.search(texto_a_encontrar, pdf_text, re.MULTILINE | re.DOTALL)
+
+    if match:
+        # A correspondência foi encontrada, você pode acessar as informações da correspondência usando match.group()
+        texto_encontrado = match.group()
+        return True
+    else:
+        return False
 
 def leitorPgdasD(path):
 
@@ -82,10 +96,25 @@ def leitorPgdasD(path):
                 for pagina in pdf:
                     # extrair o texto da página
                     texto = pagina.get_text()
-                    pdf_text += str(texto)
+
+                    # Dividir o texto em linhas
+                    linhas = texto.split('\n')
+                    
+                    # Remover as duas últimas linhas
+                    if len(linhas) >= 2:
+                        linhas = linhas[:-3]
+                    
+                    # Reconstruir o texto
+                    texto_sem_rodape = '\n'.join(linhas)
+                    
+                    # Adicionar o texto da página ao texto geral
+                    pdf_text += texto_sem_rodape
+                    pdf_text += '\n'
 
                 if identificaDeclaracao(pdf_text) == False:
                     return ["Erro", "O documento fornecido não é uma declaração do Simples Nacional!"]
+                
+                issRetido = verificaRetencaoIss(pdf_text)
                 
                 # usar expressão regular para extrair o Período de Apuração
                 match_periodoApuracao = re.search(
@@ -246,8 +275,8 @@ def leitorPgdasD(path):
                     if match_TotalDebitoExigivel:
                         totalDebitoExigivel = match_TotalDebitoExigivel.group(
                             1).strip().split("\n")
-                        simplesNacional = totalDebitoExigivel[17]
-                        inssCpp = totalDebitoExigivel[13]
+                        simplesNacional = totalDebitoExigivel[-2]
+                        inssCpp = totalDebitoExigivel[-6]
                 else:
                     debitoExigivel = ""
 
@@ -299,11 +328,14 @@ def leitorPgdasD(path):
                     receitaSubtrair = receitaInternaSubtrair + receitaExternaSubtrair
                 else:
                     receitaSubtrair = 0
-
                 if len(listaFolhas) > 0:
-
-                    folhaQueSai = listaFolhas[0]['valor']
                     
+                    folhaQueSai = 0.00
+
+                    if len(listaFolhas) == 12:
+
+                        folhaQueSai = listaFolhas[0]['valor']
+                        
                     calcFopagTotal = fopagTotal.replace(".", "")
                     calcFopagTotal = calcFopagTotal.replace(",", ".")
                     calcFopagTotal = float(calcFopagTotal)
@@ -311,7 +343,6 @@ def leitorPgdasD(path):
                     calcFopagInssCpp = inssCpp.replace(".", "")
                     calcFopagInssCpp = calcFopagInssCpp.replace(",", ".")
                     calcFopagInssCpp = float(calcFopagInssCpp)
-
                     saldoFopag = calcFopagTotal - folhaQueSai + calcFopagInssCpp
                 
                 else:
@@ -347,7 +378,7 @@ def leitorPgdasD(path):
                 rbt12Check = rbt12Check.replace(",", ".")
                 rbt12Check = float(rbt12Check)
 
-                baseFopag = rbt12Check + receita - receitaSubtrair
+                baseFopag = round((rbt12Check + receita - receitaSubtrair), 2)
 
                 fopagMinima = round(baseFopag, 2) * 0.2801
                 
@@ -385,10 +416,10 @@ def leitorPgdasD(path):
                 salarioMinimoPeriodo = float(salarioMinimoPeriodo)
                 
                 if fopagMinima < salarioMinimoPeriodo:
-                    fopagMinima = salarioMinimoPeriodo
+                    fopagMinima = int(salarioMinimoPeriodo)
                 
                 if sujeitoFatorR == "Não":
-                    fopagMinima = salarioMinimoPeriodo
+                    fopagMinima = int(salarioMinimoPeriodo)
 
                 linha_dado = [
                     "PGDASD",
@@ -403,14 +434,14 @@ def leitorPgdasD(path):
                     rbt12[0],
                     rbt12[1],
                     rbt12[2],
-                    totalDebitoExigivel[9],
-                    totalDebitoExigivel[10],
-                    totalDebitoExigivel[11],
-                    totalDebitoExigivel[12],
+                    totalDebitoExigivel[-10],
+                    totalDebitoExigivel[-9],
+                    totalDebitoExigivel[-8],
+                    totalDebitoExigivel[-7],
                     inssCpp,
-                    totalDebitoExigivel[14],
-                    totalDebitoExigivel[15],
-                    totalDebitoExigivel[16],
+                    totalDebitoExigivel[-5],
+                    totalDebitoExigivel[-4],
+                    totalDebitoExigivel[-3],
                     str(simplesNacional),
                     str(aliquotaSimples),
                     fopagTotal,
@@ -441,16 +472,6 @@ def leitorPgdasD(path):
                 # Especifique o nome do arquivo de texto
                 raiz_cnpj = ''.join(filter(str.isdigit, cnpj))
                 arquivo_texto = f"Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\{raiz_cnpj}.txt"
-                
-                # if os.path.isfile(arquivo_texto):
-                #     rbt13 = round(receita + rbt12Check, 2)
-                #     check = validadorReceitaBruta(arquivo_texto, periodoApuracao, rbt13)
-
-                #     if check[0] != round(rbt12Check, 2):
-                #         return ["Processo inadequado, diferença entre o RBT12 da base com o RBT12 da declaracao!"]
-                #     else:
-                #         fopagMinima = check[1] * 0.2801
-                #         linha_dado.append(fopagMinima)
 
                 # Texto que você deseja adicionar ao arquivo
                 texto_a_adicionar = '|'.join(linha_dado)
@@ -504,12 +525,18 @@ def leitorPgdasD(path):
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
         
-        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'periodoInicial': inicioMes}]
+        return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'cnpj': cnpj, 'periodoInicial': inicioMes, 'periodoFinal': periodoApuracao[-10:], 'valorSimples': floatExcel(simplesNacional), "issRetido": issRetido}]
 
     except Exception as e:
-        print(e)
         return ['Erro ao tentar processar o documento', e]
 
-        # print(e)
+# Pasta onde estão os arquivos PDF
+pasta = "Z:\\RPA\\Simples Nacional\\PGDAS-D processado\\Enviados"
 
-leitorPgdasD("Z:\\Fiscal\\09-2023\\A processar\\A&CL SERVICOS MEDICOS LTDA.pdf")
+# Percorra todos os arquivos na pasta
+# for arquivo in os.listdir(pasta):
+#     # Verifique se o arquivo é um arquivo PDF
+#     if arquivo.endswith(".pdf"):
+#         caminho_do_arquivo = os.path.join(pasta, arquivo)
+#         # Execute sua função para o arquivo PDF
+leitorPgdasD("C:\\Users\\rodri\\Downloads\\PGDASD-DECLARACAO-48504311202308004.pdf")

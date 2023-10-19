@@ -312,6 +312,12 @@ def process_pdf(pdf_path):
         logging.info(f"Documento processado com sucesso.")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
         info = processo[2]
+        if info['issRetido'] == True:
+            configEmail = {
+                'assunto': "Apuração com ISS retido - Verificar.",
+                'mensagem': f"Simples nacional declarado com ISS retido.<br><br>Foi encontrada informação de ISS retido na apuração do Simples Nacional da empresa {info['empresa']}<br><br>Verifique se deveria existir essa retenção, se estiver errado, refaça a declaração, reabra a folha de pagamento e reenvie para processamento no X3PO.<br><br>Caso esteja correto, não precisa tomar nenhuma ação."
+            }
+            enviarEmail(configEmail)
 
         acessar_makro(info)
 

@@ -24,21 +24,26 @@ def planilha(dados):
     cnpj = dados[0]
     competencia_str = dados[3]
     competencia = str_para_data(competencia_str)
-
+    dados[3] = competencia
+    
     # Flag para verificar se a linha foi atualizada
     linha_atualizada = False
-
+    
     # Iterar sobre as linhas existentes na planilha
     for row_num in range(2, sheet.max_row + 1):
+        
         # Verificar se o CNPJ e a competência correspondem
         if sheet.cell(row=row_num, column=1).value == cnpj and \
-        sheet.cell(row=row_num, column=4).value == competencia_str:
+        sheet.cell(row=row_num, column=4).value == competencia:
+            
             # Atualizar a linha
             for col_num, valor in enumerate(dados, start=1):
                 sheet.cell(row=row_num, column=col_num, value=valor)
+                # Copiar a formatação da célula acima
+                sheet.cell(row=row_num, column=col_num)._style = sheet.cell(row=row_num-1, column=col_num)._style
             linha_atualizada = True
             break
-
+    
     # Se a linha não foi atualizada, adicionar uma nova linha
     if not linha_atualizada:
         proxima_linha = sheet.max_row + 1
