@@ -5,6 +5,7 @@ import sys
 import logging
 import threading
 import platform
+import locale
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -34,6 +35,14 @@ from functions.emitirDas import emitirDas
 from functions.zohoSheet import outrosVinculos
 from functions.revisarVlrFopag import obterValor
 from functions.inserirLinhaPlanilha import atualizar_valor_fopag
+
+def converter_para_brl(valor):
+    # Define o locale para pt_BR (Português Brasil)
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+    
+    # Converte o valor float para o formato de moeda BRL
+    valor_formatado = locale.currency(valor, grouping=True)
+    return valor_formatado
 
 # Defina o caminho da pasta que você deseja monitorar
 folder_to_watch = 'Z:\RPA\Simples Nacional\PGDAS-D a processar'
@@ -182,7 +191,7 @@ def acessar_makro(info):
 
             configEmail = {
                 'assunto': f"Sócios possuem outros vínculos na empresa {info['empresa']}",
-                'mensagem': f"Passo - Validar empresa com sócios que possuem outros vínculos.<br><br>A empresa {info['empresa']} existe na planilha de controle de empresas que possuem sócios com outros vínculos, por isso, o processo foi interrompido.<br><br>Execute a tarefa de forma manual.{textoSociosEmail}"
+                'mensagem': f"Passo - Validar empresa com sócios que possuem outros vínculos.<br><br>A empresa {info['empresa']} existe na planilha de controle de empresas que possuem sócios com outros vínculos, por isso, o processo foi interrompido.<br><br>Execute a tarefa de forma manual.{converter_para_brl(textoSociosEmail)}"
             }
             enviarEmail(configEmail)
             driver.quit()
@@ -220,11 +229,12 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
-        
-        if not abs(revisarValor['Mensagem'] - (info['valorFopag']) * qtdSocios) <= 2.0:
+        valorMakro = revisarValor['Mensagem']
+        valorX3po = float((info['valorFopag']) * qtdSocios)
+        if not abs(valorMakro - valorX3po) <= 2.0:
             configEmail = {
                 'assunto': "O valor da folha de pagamento pode estar incorreto",
-                'mensagem': f"Passo - Validar o valor da folha de pagamento.<br><br>Diferença no valor da folha de pagamento na empresa {info['empresa']} maior que 2<br><br>Valor no Makro: {revisarValor['Mensagem']}<br><br>Valor esperado: {info['valorFopag']}"
+                'mensagem': f"Passo - Validar o valor da folha de pagamento.<br><br>Diferença no valor da folha de pagamento na empresa {info['empresa']} maior que 2<br><br>Valor no Makro: {converter_para_brl(valorMakro)}<br><br>Valor esperado: {converter_para_brl(valorX3po)}"
             }
             enviarEmail(configEmail)
             driver.quit()

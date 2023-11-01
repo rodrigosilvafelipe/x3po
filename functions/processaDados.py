@@ -47,4 +47,4 @@ def processaDados(empregados, fopagMinima, salarioMinimo):
     
     except Exception as e:
     
-        return {'erro': True, 'mesagem': f"{e} - Tipo do objeto causador do erro: {type(e).__name__}"}
+        return {'erro': True, 'mesagem': f"{e} - Tipo do objeto causador do erro: {type(e).__name__}", 'dados': []}
