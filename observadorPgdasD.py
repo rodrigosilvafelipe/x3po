@@ -148,6 +148,10 @@ def acessar_makro(info):
                 driver.quit()
                 return        
 
+            if exec['Mensagem'] == 'Servico modulo pessoal já foi encerrado.' or exec['Mensagem'] == 'Servico modulo pessoal nao aplicado.':
+                driver.quit()
+                return
+
             configEmail = {
                 'assunto': "Processo de folha automatizada cancelado.",
                 'mensagem': f"Passo - Gerar ralatório relação de empregados.<br><br>Não foi possível gerar o relatório de relação de empregados na empresa {info['empresa']}<br><br>{exec['Mensagem']}"
@@ -196,8 +200,9 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
-
+        valorX3po = 0
         for item in socios['dados']:
+            valorX3po += item['proLabore']
             if item['proLabore'] != item['anterior']:
                 alterarProLabore = alterar_prolabore(driver, item['nomeSocio'], info['periodoInicial'], item['proLabore'])
                 if alterarProLabore["Execucao"] == False:
@@ -230,7 +235,7 @@ def acessar_makro(info):
             driver.quit()
             return
         valorMakro = revisarValor['Mensagem']
-        valorX3po = float((info['valorFopag']) * qtdSocios)
+        valorX3po = float(valorX3po)
         if not abs(valorMakro - valorX3po) <= 2.0:
             configEmail = {
                 'assunto': "O valor da folha de pagamento pode estar incorreto",
