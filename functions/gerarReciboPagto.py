@@ -110,7 +110,7 @@ def gerarReciboPagto(driver, razao_social):
 
         time.sleep(1)
 
-        tipoImpressao = esperar_elemento_xpath(driver, '//*[@id="0"]/td/div[3]/div/div[8]/div/select')
+        tipoImpressao = esperar_elemento_xpath(driver, '//*[@id="0"]/td/div[3]/div/div[9]/div/select')
         seletor = Select(tipoImpressao)
         seletor.select_by_visible_text("Todos desta Empresa")
         time.sleep(0.5)

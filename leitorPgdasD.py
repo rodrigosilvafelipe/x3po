@@ -275,6 +275,8 @@ def leitorPgdasD(path):
                     if match_TotalDebitoExigivel:
                         totalDebitoExigivel = match_TotalDebitoExigivel.group(
                             1).strip().split("\n")
+                        if ' ' in totalDebitoExigivel:
+                            totalDebitoExigivel.remove(' ')
                         simplesNacional = totalDebitoExigivel[-2]
                         inssCpp = totalDebitoExigivel[-6]
                 else:

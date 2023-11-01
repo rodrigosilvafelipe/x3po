@@ -106,7 +106,6 @@ def leitorPgdasD(path):
                     
                     # Reconstruir o texto
                     texto_sem_rodape = '\n'.join(linhas)
-                    
                     # Adicionar o texto da página ao texto geral
                     pdf_text += texto_sem_rodape
                     pdf_text += '\n'
@@ -275,6 +274,10 @@ def leitorPgdasD(path):
                     if match_TotalDebitoExigivel:
                         totalDebitoExigivel = match_TotalDebitoExigivel.group(
                             1).strip().split("\n")
+                        print(totalDebitoExigivel)
+                        if ' ' in totalDebitoExigivel:
+                            totalDebitoExigivel.remove(' ')
+                        print(totalDebitoExigivel)
                         simplesNacional = totalDebitoExigivel[-2]
                         inssCpp = totalDebitoExigivel[-6]
                 else:
@@ -328,6 +331,7 @@ def leitorPgdasD(path):
                     receitaSubtrair = receitaInternaSubtrair + receitaExternaSubtrair
                 else:
                     receitaSubtrair = 0
+                
                 if len(listaFolhas) > 0:
                     
                     folhaQueSai = 0.00
@@ -339,10 +343,11 @@ def leitorPgdasD(path):
                     calcFopagTotal = fopagTotal.replace(".", "")
                     calcFopagTotal = calcFopagTotal.replace(",", ".")
                     calcFopagTotal = float(calcFopagTotal)
-
+                    
                     calcFopagInssCpp = inssCpp.replace(".", "")
                     calcFopagInssCpp = calcFopagInssCpp.replace(",", ".")
                     calcFopagInssCpp = float(calcFopagInssCpp)
+                    
                     saldoFopag = calcFopagTotal - folhaQueSai + calcFopagInssCpp
                 
                 else:
@@ -364,9 +369,11 @@ def leitorPgdasD(path):
                 # aliquota simples nacional
                 totalSimples = simplesNacional.replace(".", "")
                 totalSimples = totalSimples.replace(",", ".")
+                
                 totalSimples = float(totalSimples)
                 receita = rpa[2].replace(".", "")
                 receita = receita.replace(",", ".")
+                
                 receita = float(receita)
                 if totalSimples > 0.00:
                     aliquotaSimples = totalSimples / receita
@@ -520,7 +527,7 @@ def leitorPgdasD(path):
                     with open(arquivo_texto, 'w') as arquivo:
                         arquivo.writelines(linhas_ordenadas)
            
-        planilha(linha_planilha)
+        # planilha(linha_planilha)
 
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
@@ -528,6 +535,7 @@ def leitorPgdasD(path):
         return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'cnpj': cnpj, 'periodoInicial': inicioMes, 'periodoFinal': periodoApuracao[-10:], 'valorSimples': floatExcel(simplesNacional), "issRetido": issRetido}]
 
     except Exception as e:
+        print(e)
         return ['Erro ao tentar processar o documento', e]
 
 # Pasta onde estão os arquivos PDF
@@ -539,4 +547,4 @@ pasta = "Z:\\RPA\\Simples Nacional\\PGDAS-D processado\\Enviados"
 #     if arquivo.endswith(".pdf"):
 #         caminho_do_arquivo = os.path.join(pasta, arquivo)
 #         # Execute sua função para o arquivo PDF
-leitorPgdasD("C:\\Users\\rodri\\Downloads\\PGDASD-DECLARACAO-48504311202308004.pdf")
+leitorPgdasD("C:\\Users\\rodri\\Downloads\\PGDASD-DECLARACAO-33776924202310001.pdf")

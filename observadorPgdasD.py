@@ -129,6 +129,16 @@ def acessar_makro(info):
             return
         exec = gerarRelatorioRelacaoEmpregados(driver, info)
         if exec['Execucao'] == False:
+            if(exec['Mensagem'] == 'Servico modulo pessoal nao aplicado.') and info['valorSimples'] != 0:
+
+                configEmail = {
+                'assunto': "Processo de folha automatizada cancelado.",
+                'mensagem': f"Passo - Validar empresa com faturamento sem folha de pagamento.<br><br>A empresa {info['empresa']} possui faturamento e não está movimentando a folha de pagamento.<br><br>Verifique essa situação.<br><br>{exec['Mensagem']}"
+                }
+                enviarEmail(configEmail)
+                driver.quit()
+                return        
+
             configEmail = {
                 'assunto': "Processo de folha automatizada cancelado.",
                 'mensagem': f"Passo - Gerar ralatório relação de empregados.<br><br>Não foi possível gerar o relatório de relação de empregados na empresa {info['empresa']}<br><br>{exec['Mensagem']}"
@@ -136,6 +146,7 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
+        
         renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
@@ -151,6 +162,7 @@ def acessar_makro(info):
             return
 
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
+        qtdSocios = len(socios['dados'])
         if socios['erro'] == True:
             configEmail = {
                         'assunto': "Não existem sócios com pró-labore",
@@ -209,7 +221,7 @@ def acessar_makro(info):
             driver.quit()
             return
         
-        if not abs(revisarValor['Mensagem'] - info['valorFopag']) <= 2.0:
+        if not abs(revisarValor['Mensagem'] - (info['valorFopag']) * qtdSocios) <= 2.0:
             configEmail = {
                 'assunto': "O valor da folha de pagamento pode estar incorreto",
                 'mensagem': f"Passo - Validar o valor da folha de pagamento.<br><br>Diferença no valor da folha de pagamento na empresa {info['empresa']} maior que 2<br><br>Valor no Makro: {revisarValor['Mensagem']}<br><br>Valor esperado: {info['valorFopag']}"
