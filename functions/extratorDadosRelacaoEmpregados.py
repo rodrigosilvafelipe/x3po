@@ -1,7 +1,9 @@
 import openpyxl
 import re
+import datetime
 
 def dadosRelacaoEmpregados(xlsx_path, cnpj):
+    
     try:
         # Abrir o arquivo Excel
         workbook = openpyxl.load_workbook(xlsx_path)
@@ -14,8 +16,10 @@ def dadosRelacaoEmpregados(xlsx_path, cnpj):
         
         # Usar expressão regular para extrair o CNPJ do texto
         cnpj_extraido = re.search(r'\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}', cnpj_celula)
+        
         if cnpj_extraido:
             cnpj_extraido = cnpj_extraido.group()
+
         else:
             return {'execução': False, 'mensagem': 'CNPJ não encontrado no relatório'}
         
@@ -39,7 +43,7 @@ def dadosRelacaoEmpregados(xlsx_path, cnpj):
             empregado = sheet[f'{empregado_col}{row}'].value
             profissao = sheet[f'{profissao_col}{row}'].value
             salario = sheet[f'{salario_col}{row}'].value
-            
+
             # Adicionar os dados extraídos ao dicionário
             empregados_dict[empregado] = {'profissão': profissao, 'salário': salario}
             
@@ -49,4 +53,5 @@ def dadosRelacaoEmpregados(xlsx_path, cnpj):
         return {'execução': True, 'mensagem': 'Processado com sucesso', 'dados': empregados_dict}
     
     except Exception as e:
-        return {'execução': False, 'mensagem': str(e)}
+        
+        return {'execução': False, 'mensagem': e}

@@ -6,6 +6,7 @@ import logging
 import threading
 import platform
 import locale
+import datetime
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -136,6 +137,7 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
+        
         exec = gerarRelatorioRelacaoEmpregados(driver, info)
         if exec['Execucao'] == False:
             if(exec['Mensagem'] == 'Servico modulo pessoal nao aplicado.') and info['valorSimples'] != 0:
@@ -164,6 +166,7 @@ def acessar_makro(info):
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
         dados = dadosRelacaoEmpregados(arquivo, info['cnpj'])
+
         if dados['execução'] == False:
             limparPasta("Z:\RPA\Folha Pró-Labore\Fopag Processada")
             configEmail = {
@@ -175,7 +178,7 @@ def acessar_makro(info):
             return
 
         socios = processaDados(dados["dados"], info['valorFopag'], info['salarioMinimo'])
-        qtdSocios = len(socios['dados'])
+
         if socios['erro'] == True:
             configEmail = {
                         'assunto': "Não existem sócios com pró-labore",
@@ -191,16 +194,19 @@ def acessar_makro(info):
             
             textoSociosEmail = "<br><br>Seguem os valores do pró-labore dos sócios:<br><br>"
             for item in socios['dados']:
-                textoSociosEmail += f"{item['nomeSocio']}: {item['proLabore']}<br>"
+                textoSociosEmail += f"{item['nomeSocio']}: {converter_para_brl(item['proLabore'])}<br>"
 
             configEmail = {
                 'assunto': f"Sócios possuem outros vínculos na empresa {info['empresa']}",
-                'mensagem': f"Passo - Validar empresa com sócios que possuem outros vínculos.<br><br>A empresa {info['empresa']} existe na planilha de controle de empresas que possuem sócios com outros vínculos, por isso, o processo foi interrompido.<br><br>Execute a tarefa de forma manual.{converter_para_brl(textoSociosEmail)}"
+                'mensagem': f"Passo - Validar empresa com sócios que possuem outros vínculos.<br><br>A empresa {info['empresa']} existe na planilha de controle de empresas que possuem sócios com outros vínculos, por isso, o processo foi interrompido.<br><br>Execute a tarefa de forma manual.{textoSociosEmail}"
             }
+
             enviarEmail(configEmail)
             driver.quit()
             return
+        
         valorX3po = 0
+        
         for item in socios['dados']:
             valorX3po += item['proLabore']
             if item['proLabore'] != item['anterior']:
@@ -234,8 +240,10 @@ def acessar_makro(info):
             enviarEmail(configEmail)
             driver.quit()
             return
+        
         valorMakro = revisarValor['Mensagem']
         valorX3po = float(valorX3po)
+
         if not abs(valorMakro - valorX3po) <= 2.0:
             configEmail = {
                 'assunto': "O valor da folha de pagamento pode estar incorreto",
