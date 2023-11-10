@@ -57,7 +57,7 @@ def planilha(dados):
 
     return True
 
-def atualizar_valor_fopag(cnpj, competencia, novo_valor):
+def atualizar_valor_fopag(cnpj, competencia_str, novo_valor):
     planilha = 'Z:\RPA\Simples Nacional\BD_Simples_Nacional\Acompanhamento tributário.xlsx'
 
     # Carregar a planilha existente
@@ -68,6 +68,8 @@ def atualizar_valor_fopag(cnpj, competencia, novo_valor):
 
     # Flag para verificar se a linha foi atualizada
     linha_atualizada = False
+
+    competencia = str_para_data(competencia_str)
 
     # Iterar sobre as linhas existentes na planilha
     for row_num in range(2, sheet.max_row + 1):
