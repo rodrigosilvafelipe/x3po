@@ -106,6 +106,7 @@ def leitorPgdasD(path):
                     
                     # Reconstruir o texto
                     texto_sem_rodape = '\n'.join(linhas)
+                    
                     # Adicionar o texto da página ao texto geral
                     pdf_text += texto_sem_rodape
                     pdf_text += '\n'
@@ -274,10 +275,8 @@ def leitorPgdasD(path):
                     if match_TotalDebitoExigivel:
                         totalDebitoExigivel = match_TotalDebitoExigivel.group(
                             1).strip().split("\n")
-                        print(totalDebitoExigivel)
                         if ' ' in totalDebitoExigivel:
                             totalDebitoExigivel.remove(' ')
-                        print(totalDebitoExigivel)
                         simplesNacional = totalDebitoExigivel[-2]
                         inssCpp = totalDebitoExigivel[-6]
                 else:
@@ -331,7 +330,6 @@ def leitorPgdasD(path):
                     receitaSubtrair = receitaInternaSubtrair + receitaExternaSubtrair
                 else:
                     receitaSubtrair = 0
-                
                 if len(listaFolhas) > 0:
                     
                     folhaQueSai = 0.00
@@ -343,11 +341,10 @@ def leitorPgdasD(path):
                     calcFopagTotal = fopagTotal.replace(".", "")
                     calcFopagTotal = calcFopagTotal.replace(",", ".")
                     calcFopagTotal = float(calcFopagTotal)
-                    
+
                     calcFopagInssCpp = inssCpp.replace(".", "")
                     calcFopagInssCpp = calcFopagInssCpp.replace(",", ".")
                     calcFopagInssCpp = float(calcFopagInssCpp)
-                    
                     saldoFopag = calcFopagTotal - folhaQueSai + calcFopagInssCpp
                 
                 else:
@@ -369,11 +366,9 @@ def leitorPgdasD(path):
                 # aliquota simples nacional
                 totalSimples = simplesNacional.replace(".", "")
                 totalSimples = totalSimples.replace(",", ".")
-                
                 totalSimples = float(totalSimples)
                 receita = rpa[2].replace(".", "")
                 receita = receita.replace(",", ".")
-                
                 receita = float(receita)
                 if totalSimples > 0.00:
                     aliquotaSimples = totalSimples / receita
@@ -421,7 +416,7 @@ def leitorPgdasD(path):
                 salarioMinimoPeriodo = salario_encontrado.replace(".", "")
                 salarioMinimoPeriodo = salarioMinimoPeriodo.replace(",", ".")
                 salarioMinimoPeriodo = float(salarioMinimoPeriodo)
-                
+
                 if fopagMinima < salarioMinimoPeriodo:
                     fopagMinima = int(salarioMinimoPeriodo)
                 
@@ -474,60 +469,66 @@ def leitorPgdasD(path):
                     floatExcel(simplesNacional),
                     floatExcel(inssCpp),
                     floatExcel(fopagTotal)
-                ]
+                ]               
+
+                #
+                #
+                #
+                #
+                # Grava dados em um txt
 
                 # Especifique o nome do arquivo de texto
-                raiz_cnpj = ''.join(filter(str.isdigit, cnpj))
-                arquivo_texto = f"Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\{raiz_cnpj}.txt"
+                #raiz_cnpj = ''.join(filter(str.isdigit, cnpj))
+                #arquivo_texto = f"Z:\\RPA\\Simples Nacional\\BD_Simples_Nacional\\{raiz_cnpj}.txt"
 
                 # Texto que você deseja adicionar ao arquivo
-                texto_a_adicionar = '|'.join(linha_dado)
-
+                #texto_a_adicionar = '|'.join(linha_dado)
+                
                 # Verifica se o arquivo já existe
-                if not os.path.isfile(arquivo_texto):
+                #if not os.path.isfile(arquivo_texto):
                     # Se o arquivo não existir, cria um novo arquivo
-                    with open(arquivo_texto, 'w') as arquivo:
-                        arquivo.write(f"{texto_a_adicionar}\n")
-                else:
+                #    with open(arquivo_texto, 'w') as arquivo:
+                #        arquivo.write(f"{texto_a_adicionar}\n")
+                #else:
                     
                     # Lê o conteúdo atual do arquivo
-                    with open(arquivo_texto, 'r') as arquivo:
-                        linhas = arquivo.readlines()
-
+                #    with open(arquivo_texto, 'r') as arquivo:
+                #        linhas = arquivo.readlines()
+                                        
                     # Verifica se a nova linha já existe no conteúdo
-                    ja_existe = False
-                    for i, linha in enumerate(linhas):
-                        if linha.strip().split('|')[5] == linha_dado[5]:  # Compara o período da declaração
-                            linhas[i] = texto_a_adicionar + '\n'
-                            ja_existe = True
-                            break
-                    
+                #    ja_existe = False
+                #    for i, linha in enumerate(linhas):
+                #        if linha.strip().split('|')[5] == linha_dado[5]:  # Compara o período da declaração
+                #            linhas[i] = texto_a_adicionar + '\n'
+                #            ja_existe = True
+                #            break
+                
                     # Se a linha não existir, adiciona a nova linha ao conteúdo
-                    if not ja_existe:
-                        linhas.append(texto_a_adicionar + '\n')
+                #    if not ja_existe:
+                #        linhas.append(texto_a_adicionar + '\n')
                     
                     # Função para extrair a data do campo 6 (assumindo que o campo é uma string no formato "DD/MM/AAAA")
-                    def extrair_data(linha):
-                        campos = linha.strip().split('|')
+                #    def extrair_data(linha):
+                #        campos = linha.strip().split('|')
                         
-                        if len(campos) > 5:
-                            data_str = campos[5]  # Assumindo que o campo 6 contém a data no formato "DD/MM/AAAA"
-                            try:
-                                data_obj = datetime.strptime(data_str, "%d/%m/%Y")
-                                return data_obj
-                            except ValueError:
-                                return None
-                        else:
-                            return None
+                #        if len(campos) > 5:
+                #            data_str = campos[5]  # Assumindo que o campo 6 contém a data no formato "DD/MM/AAAA"
+                #            try:
+                #                data_obj = datetime.strptime(data_str, "%d/%m/%Y")
+                #                return data_obj
+                #            except ValueError:
+                #                return None
+                #        else:
+                #            return None
 
                     # Ordenar as linhas com base nas datas
-                    linhas_ordenadas = sorted(linhas, key=extrair_data)
+                #    linhas_ordenadas = sorted(linhas, key=extrair_data)
                     
                     # Salva o conteúdo atualizado de volta no arquivo
-                    with open(arquivo_texto, 'w') as arquivo:
-                        arquivo.writelines(linhas_ordenadas)
-           
-        # planilha(linha_planilha)
+                #    with open(arquivo_texto, 'w') as arquivo:
+                #        arquivo.writelines(linhas_ordenadas)
+                
+        planilha(linha_planilha)
 
         if anexoFatorR != "Anexo III":
             return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
@@ -535,16 +536,7 @@ def leitorPgdasD(path):
         return ['Processado com sucesso', arquivo_texto, {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'cnpj': cnpj, 'periodoInicial': inicioMes, 'periodoFinal': periodoApuracao[-10:], 'valorSimples': floatExcel(simplesNacional), "issRetido": issRetido}]
 
     except Exception as e:
-        print(e)
+        
         return ['Erro ao tentar processar o documento', e]
-
-# Pasta onde estão os arquivos PDF
-pasta = "Z:\\RPA\\Simples Nacional\\PGDAS-D processado\\Enviados"
-
-# Percorra todos os arquivos na pasta
-# for arquivo in os.listdir(pasta):
-#     # Verifique se o arquivo é um arquivo PDF
-#     if arquivo.endswith(".pdf"):
-#         caminho_do_arquivo = os.path.join(pasta, arquivo)
-#         # Execute sua função para o arquivo PDF
-leitorPgdasD("C:\\Users\\rodri\\Downloads\\PGDASD-DECLARACAO-33776924202310001.pdf")
+    
+leitorPgdasD("C:/Users/rodri/Downloads/PGDASD-DECLARACAO-50585877202311001.pdf")

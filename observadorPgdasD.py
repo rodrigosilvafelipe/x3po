@@ -346,7 +346,7 @@ def process_pdf(pdf_path):
         
         logging.info(f"Documento processado com sucesso.")
         dest_directory = "Z:\RPA\Simples Nacional\PGDAS-D processado"
-        info = processo[2]
+        info = processo[1]
         if info['issRetido'] == True:
             configEmail = {
                 'assunto': "Apuração com ISS retido - Verificar.",
