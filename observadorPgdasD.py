@@ -162,7 +162,17 @@ def acessar_makro(info):
             driver.quit()
             return
         
-        renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
+        renomear_relatorio = renomearRelatorio("Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\", info['empresa'])
+
+        if renomear_relatorio["Execução"] == False:
+            configEmail = {
+                'assunto': "Erro ao processar relação de empregados",
+                'mensagem': f"Passo - Renomear relatório de empregados.<br><br>Não foi possível renomear o relatório de relação de empregados na empresa {info['empresa']}<br><br>{renomear_relatorio['Mensagem']}"
+            }
+            enviarEmail(configEmail)
+            driver.quit()
+            return
+
         arquivo = f"Z:\\RPA\\Folha Pró-Labore\\Fopag Processada\\{info['empresa']}.xlsx"
         time.sleep(1)
         dados = dadosRelacaoEmpregados(arquivo, info['cnpj'])
