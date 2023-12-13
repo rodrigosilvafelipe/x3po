@@ -148,7 +148,7 @@ def acessar_makro(info):
                 }
                 enviarEmail(configEmail)
                 driver.quit()
-                return        
+                return
 
             if exec['Mensagem'] == 'Servico modulo pessoal já foi encerrado.' or exec['Mensagem'] == 'Servico modulo pessoal nao aplicado.':
                 driver.quit()
@@ -167,7 +167,7 @@ def acessar_makro(info):
         if renomear_relatorio["Execução"] == False:
             configEmail = {
                 'assunto': "Erro ao processar relação de empregados",
-                'mensagem': f"Passo - Renomear relatório de empregados.<br><br>Não foi possível renomear o relatório de relação de empregados na empresa {info['empresa']}<br><br>{renomear_relatorio['Mensagem']}"
+                'mensagem': f"Passo - Renomear relatório de empregados.<br><br>Não foi possível renomear o relatório de relação de empregados na empresa {info['empresa']}<br><br>{renomear_relatorio['Mensagem']}<br><br>Pode haver problema no mapeamento do botão pra gerar o relatório correto, verifique."
             }
             enviarEmail(configEmail)
             driver.quit()

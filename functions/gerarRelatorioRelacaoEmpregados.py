@@ -4,6 +4,7 @@ import os
 import datetime
 import pandas as pd
 import pyautogui
+import json
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -14,9 +15,17 @@ from functions.functions import esperar_elemento_xpath
 
 def gerarRelatorioRelacaoEmpregados(driver, opcoes):
 
+    with open("Z:\RPA\mapa.json", 'r') as arquivo_json:
+        # Leia o conteúdo do arquivo JSON
+        mapa = json.load(arquivo_json)
+
+    url = mapa["relatorios"]["modulo_145"]["url"]
+    btnVisualizar = mapa["relatorios"]["modulo_145"]["Relacao de Empregados"]["id_btnVisualizar"]
+    btnExcel = mapa["relatorios"]["modulo_145"]["Relacao de Empregados"]["id_btnExcel"]
+
     # ######################## Inicio - Acessar página de relatórios #########################
 
-    driver.get("https://www.makroweb.com.br/Relatorios.aspx?PkModulos=145")
+    driver.get(url)
 
     seletor = ".toast-place-right"  # Exemplo de seletor de classe
     driver.execute_script(f"document.querySelector('{seletor}').innerHTML = '';")
@@ -37,14 +46,14 @@ def gerarRelatorioRelacaoEmpregados(driver, opcoes):
         if statusServico == "pessoal-verde.svg":
             return {"Execucao": False, "Mensagem": "Servico modulo pessoal já foi encerrado."}
 
-        vizualizar = esperar_elemento_id(driver, "Conteudo_GridRelatorios_BtnVisualizar_61")
+        vizualizar = esperar_elemento_id(driver, btnVisualizar)
         vizualizar.click()
 
         time.sleep(2)
 
         driver.switch_to.default_content()
 
-        exportarExcel = esperar_elemento_id(driver, "Conteudo_GridRelatorios_BtnExcel_61")
+        exportarExcel = esperar_elemento_id(driver, btnExcel)
         exportarExcel.click()
 
         time.sleep(2)

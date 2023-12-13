@@ -529,7 +529,7 @@ def leitorPgdasD(path):
         planilha(linha_planilha)
 
         if anexoFatorR != "Anexo III":
-            return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração!"]
+            return ["Advertencia", "Simples nacional calculado no anexo V, verifique a declaração."]
         
         return ['Processado com sucesso', {'valorFopag': fopagMinima, 'salarioMinimo': salarioMinimoPeriodo, 'empresa': nome_empresarial, 'cnpj': cnpj, 'periodoInicial': inicioMes, 'periodoFinal': periodoApuracao[-10:], 'valorSimples': floatExcel(simplesNacional), "issRetido": issRetido}]
 

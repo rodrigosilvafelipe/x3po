@@ -308,3 +308,40 @@
 2023-11-02 21:31:14,122 - Documento processado com sucesso.
 2023-11-02 21:31:27,547 - Acessando Makro
 2023-11-02 21:32:09,417 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-51497042202310001.pdf
+2023-12-12 16:39:39,123 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-12 16:46:47,038 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-12 16:47:00,470 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41302816202310002 (2).pdf
+2023-12-12 16:47:06,394 - Documento processado com sucesso.
+2023-12-12 16:47:07,813 - Acessando Makro
+2023-12-12 16:48:23,484 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41302816202310002 (2).pdf
+2023-12-12 17:15:30,862 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-12 17:15:56,869 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-41302816202310002 (2).pdf
+2023-12-12 17:16:02,597 - Documento processado com sucesso.
+2023-12-12 17:16:04,137 - Acessando Makro
+2023-12-12 17:16:25,564 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-41302816202310002 (2).pdf
+2023-12-13 17:25:46,987 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-13 17:26:37,941 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 17:26:47,960 - Erro ao tentar processar o documento
+2023-12-13 17:26:47,960 - no such file: 'Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf'
+2023-12-13 17:26:47,960 - Enviando email com detalhaes.
+2023-12-13 17:26:50,062 - Não foi possível enviar o e-mail.
+2023-12-13 17:26:50,065 - O arquivo PDF especificado nao existe.
+2023-12-13 17:27:29,104 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 17:27:35,722 - Documento processado com sucesso.
+2023-12-13 17:27:40,145 - Acessando Makro
+2023-12-13 17:29:22,129 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:20:28,228 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-13 18:20:46,798 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:20:52,620 - Documento processado com sucesso.
+2023-12-13 18:20:57,109 - Acessando Makro
+2023-12-13 18:22:04,299 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:29:46,711 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-13 18:29:59,569 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:30:05,117 - Documento processado com sucesso.
+2023-12-13 18:30:06,811 - Acessando Makro
+2023-12-13 18:30:25,618 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:31:11,012 - Iniciando monitoramento de Z:\RPA\Simples Nacional\PGDAS-D a processar
+2023-12-13 18:31:25,336 - PDF detectado: Z:\RPA\Simples Nacional\PGDAS-D a processar\PGDASD-DECLARACAO-49384628202311001.pdf
+2023-12-13 18:31:30,827 - Documento processado com sucesso.
+2023-12-13 18:31:32,908 - Acessando Makro
+2023-12-13 18:34:12,153 - Arquivo PDF movido para Z:\RPA\Simples Nacional\PGDAS-D processado\PGDASD-DECLARACAO-49384628202311001.pdf
